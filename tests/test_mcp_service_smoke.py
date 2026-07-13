@@ -4,10 +4,12 @@ import asyncio
 from datetime import datetime, timezone
 from pathlib import Path
 from types import SimpleNamespace
+import json
 
 from src.models import ContentItem, SourceType
 from src.mcp.server import hz_get_metrics
 from src.mcp.service import HorizonPipelineService
+from src.services.webhook import WebhookDeliveryResult, WebhookDeliveryStatus
 
 
 def make_item(item_id: str, score: float | None = None) -> ContentItem:
@@ -62,6 +64,45 @@ def test_get_effective_config_can_filter_sources(tmp_path: Path) -> None:
     assert result["selected_sources"] == ["rss"]
     assert result["config"]["sources"]["github"] == []
     assert result["config"]["sources"]["rss"]
+
+
+def test_get_effective_config_redacts_expanded_query_and_header_secrets(
+    tmp_path: Path, monkeypatch
+) -> None:
+    repo_root = Path(__file__).resolve().parents[1]
+    config = json.loads((repo_root / "data" / "config.example.json").read_text(encoding="utf-8"))
+    config["sources"]["rss"][0]["url"] = "https://example.com/feed?key=${FEED_TOKEN}&view=full"
+    config["sources"]["rss"][1]["url"] = "https://${URL_USER}:${URL_PASSWORD}@example.com/private"
+    config["webhook"]["headers"] = "Authorization: Bearer ${AUTH_TOKEN}\nX-Trace: useful"
+    config["webhook"]["request_body"] = {"api_key": "${BODY_KEY}", "message": "useful"}
+    config_path = tmp_path / "config.json"
+    config_path.write_text(json.dumps(config), encoding="utf-8")
+    monkeypatch.setenv("FEED_TOKEN", "feed-secret")
+    monkeypatch.setenv("AUTH_TOKEN", "header-secret")
+    monkeypatch.setenv("BODY_KEY", "body-secret")
+    monkeypatch.setenv("URL_USER", "private-user")
+    monkeypatch.setenv("URL_PASSWORD", "private-password")
+
+    result = HorizonPipelineService(runs_root=tmp_path / "runs").get_effective_config(
+        horizon_path=str(repo_root), config_path=str(config_path)
+    )
+    rendered = json.dumps(result)
+
+    assert "feed-secret" not in rendered
+    assert "header-secret" not in rendered
+    assert "body-secret" not in rendered
+    assert "private-user" not in rendered
+    assert "private-password" not in rendered
+    assert result["config"]["sources"]["rss"][0]["url"] == (
+        "https://example.com/feed?key=%3Credacted%3E&view=full"
+    )
+    assert result["config"]["sources"]["rss"][1]["url"] == "https://<redacted>@example.com/private"
+    assert result["config"]["webhook"]["headers"] == "Authorization: <redacted>\nX-Trace: useful"
+    assert result["config"]["webhook"]["request_body"] == {
+        "api_key": "<redacted>",
+        "message": "useful",
+    }
+    assert result["config"]["ai"]["api_key_env"] == "OPENAI_API_KEY"
 
 
 def test_metrics_tool_smoke() -> None:
@@ -185,3 +226,116 @@ def test_filter_items_applies_balanced_digest(tmp_path: Path, monkeypatch) -> No
     assert result["removed_by_balanced_digest"] == 1
     assert result["balanced_digest_enabled"] is True
     assert result["group_counts"] == {"other": 1}
+
+
+def test_generate_summary_persists_empty_summary_without_summarizer(
+    tmp_path: Path, monkeypatch
+) -> None:
+    service = HorizonPipelineService(runs_root=tmp_path / "mcp-runs")
+    service.run_store.create_run("run-empty")
+    service.run_store.save_items("run-empty", "raw", [])
+    service.run_store.save_items("run-empty", "filtered", [])
+
+    class UnexpectedSummarizer:
+        def __init__(self) -> None:
+            raise AssertionError("summarizer must not be constructed for empty input")
+
+    monkeypatch.setattr(
+        service,
+        "_build_context",
+        lambda **kwargs: (
+            SimpleNamespace(runtime=SimpleNamespace(DailySummarizer=UnexpectedSummarizer)),
+            [],
+            [],
+        ),
+    )
+
+    result = asyncio.run(
+        service.generate_summary(
+            run_id="run-empty", language="en", source_stage="filtered"
+        )
+    )
+
+    assert result["items_used"] == 0
+    assert result["preview"] == ""
+    assert Path(result["summary_path"]).read_text(encoding="utf-8") == ""
+
+
+def test_run_pipeline_skips_enrichment_when_filter_is_empty(
+    tmp_path: Path, monkeypatch
+) -> None:
+    service = HorizonPipelineService(runs_root=tmp_path / "mcp-runs")
+    calls: list[tuple[str, str]] = []
+
+    async def fetch_items(**kwargs):  # type: ignore[no-untyped-def]
+        return {"run_id": "run-empty"}
+
+    async def score_items(**kwargs):  # type: ignore[no-untyped-def]
+        return {"scored": 1}
+
+    async def filter_items(**kwargs):  # type: ignore[no-untyped-def]
+        return {"kept": 0}
+
+    async def enrich_items(**kwargs):  # type: ignore[no-untyped-def]
+        raise AssertionError("enrichment must be skipped for empty filtered input")
+
+    async def generate_summary(**kwargs):  # type: ignore[no-untyped-def]
+        calls.append((kwargs["language"], kwargs["source_stage"]))
+        return {"items_used": 0, "preview": ""}
+
+    monkeypatch.setattr(service, "fetch_items", fetch_items)
+    monkeypatch.setattr(service, "score_items", score_items)
+    monkeypatch.setattr(service, "filter_items", filter_items)
+    monkeypatch.setattr(service, "enrich_items", enrich_items)
+    monkeypatch.setattr(service, "generate_summary", generate_summary)
+    monkeypatch.setattr(
+        service,
+        "_build_context",
+        lambda **kwargs: (
+            SimpleNamespace(config=SimpleNamespace(ai=SimpleNamespace(languages=["en", "zh"]))),
+            [],
+            [],
+        ),
+    )
+    monkeypatch.setattr(service.run_store, "load_meta", lambda run_id: {})
+
+    result = asyncio.run(service.run_pipeline(enrich=True))
+
+    assert result["enrich"] is None
+    assert calls == [("en", "filtered"), ("zh", "filtered")]
+    assert [summary["preview"] for summary in result["summaries"]] == ["", ""]
+
+
+def test_send_webhook_reports_delivery_failure_truthfully(
+    tmp_path: Path, monkeypatch
+) -> None:
+    service = HorizonPipelineService(runs_root=tmp_path / "mcp-runs")
+    webhook_config = SimpleNamespace(enabled=True)
+    monkeypatch.setattr(
+        service,
+        "_build_context",
+        lambda **kwargs: (
+            SimpleNamespace(config=SimpleNamespace(webhook=webhook_config)),
+            [],
+            [],
+        ),
+    )
+
+    class FakeNotifier:
+        def __init__(self, config) -> None:  # type: ignore[no-untyped-def]
+            assert config is webhook_config
+
+        async def notify(self, variables):  # type: ignore[no-untyped-def]
+            return WebhookDeliveryResult(
+                WebhookDeliveryStatus.PLATFORM_FAILURE,
+                status_code=200,
+                detail="platform rejected payload",
+            )
+
+    monkeypatch.setattr("src.mcp.service.WebhookNotifier", FakeNotifier)
+
+    result = asyncio.run(service.send_webhook(date="2026-04-24", summary="digest"))
+
+    assert result["sent"] is False
+    assert result["status"] == "platform_failure"
+    assert result["status_code"] == 200

@@ -40,7 +40,7 @@ def test_returns_extracted_text():
     with patch.dict(sys.modules, {"trafilatura": _trafilatura_mock("Extracted article text.")}):
         result = asyncio.run(_extractor().extract(URL, client))
     assert result == "Extracted article text."
-    client.get.assert_awaited_once_with(URL, follow_redirects=True)
+    client.get.assert_awaited_once_with(URL, follow_redirects=False)
 
 
 def test_returns_none_when_trafilatura_returns_empty():

@@ -10,7 +10,7 @@ import httpx
 from rich.console import Console
 
 from .models import Config, ContentItem
-from .storage.manager import StorageManager
+from .storage.manager import StorageManager, safe_output_path
 from .services.email import EmailManager
 from .services.webhook import WebhookNotifier
 from .scrapers.github import GitHubScraper
@@ -163,7 +163,7 @@ class HorizonOrchestrator:
                     posts_dir = Path("docs/_posts")
                     posts_dir.mkdir(parents=True, exist_ok=True)
 
-                    dest_path = posts_dir / post_filename
+                    dest_path = safe_output_path(posts_dir, post_filename)
 
                     # Add Jekyll front matter
                     front_matter = (

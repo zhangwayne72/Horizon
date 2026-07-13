@@ -3,10 +3,12 @@
 from __future__ import annotations
 
 import os
+import re
 from dataclasses import dataclass
 from datetime import datetime, timedelta, timezone
 from pathlib import Path
 from typing import Any
+from urllib.parse import parse_qsl, urlencode, urlsplit, urlunsplit
 
 from .errors import HorizonMcpError
 from .horizon_adapter import (
@@ -24,6 +26,54 @@ from .horizon_adapter import (
 )
 from .run_store import RunStore
 from ..services.webhook import WebhookNotifier
+
+
+_REDACTED = "<redacted>"
+_SENSITIVE_NAME = re.compile(
+    r"(?:^|[-_])(authorization|cookie|credential|key|password|secret|signature|token|api[-_]?key)(?:$|[-_])",
+    re.IGNORECASE,
+)
+
+
+def _redact_config(value: Any, key: str = "") -> Any:
+    """Redact secrets from expanded config while preserving its structure."""
+    if key.lower().endswith("_env"):
+        return value
+    if _SENSITIVE_NAME.search(key):
+        return _REDACTED
+    if isinstance(value, dict):
+        return {item_key: _redact_config(item, str(item_key)) for item_key, item in value.items()}
+    if isinstance(value, list):
+        return [_redact_config(item) for item in value]
+    if not isinstance(value, str):
+        return value
+
+    lines = value.splitlines()
+    if any(":" in line for line in lines):
+        redacted_lines = []
+        for line in lines:
+            name, separator, header_value = line.partition(":")
+            if separator and _SENSITIVE_NAME.search(name.strip()):
+                line = f"{name}:{' ' if header_value.startswith(' ') else ''}{_REDACTED}"
+            redacted_lines.append(line)
+        value = "\n".join(redacted_lines)
+
+    try:
+        parts = urlsplit(value)
+        if parts.scheme in {"http", "https"} and parts.netloc:
+            netloc = parts.netloc
+            if parts.username is not None or parts.password is not None:
+                netloc = f"{_REDACTED}@{parts.hostname or ''}"
+                if parts.port is not None:
+                    netloc += f":{parts.port}"
+            query = [
+                (name, _REDACTED if _SENSITIVE_NAME.search(name) else item_value)
+                for name, item_value in parse_qsl(parts.query, keep_blank_values=True)
+            ]
+            value = urlunsplit(parts._replace(netloc=netloc, query=urlencode(query)))
+    except ValueError:
+        pass
+    return value
 
 
 def _default_runs_root() -> Path:
@@ -155,7 +205,7 @@ class HorizonPipelineService:
             "config_path": str(ctx.config_path),
             "selected_sources": selected_sources,
             "unknown_sources": unknown_sources,
-            "config": ctx.config.model_dump(mode="json"),
+            "config": _redact_config(ctx.config.model_dump(mode="json")),
         }
 
     async def validate_config(
@@ -448,13 +498,16 @@ class HorizonPipelineService:
         total_fetched = self._total_fetched(run_id, fallback=len(items))
         date_str = datetime.now(timezone.utc).strftime("%Y-%m-%d")
 
-        summarizer = ctx.runtime.DailySummarizer()
-        summary = await summarizer.generate_summary(
-            items,
-            date_str,
-            total_fetched,
-            language=language,
-        )
+        if items:
+            summarizer = ctx.runtime.DailySummarizer()
+            summary = await summarizer.generate_summary(
+                items,
+                date_str,
+                total_fetched,
+                language=language,
+            )
+        else:
+            summary = ""
 
         run_summary_path = self.run_store.save_summary(run_id, language, summary)
         published_path = None
@@ -520,7 +573,7 @@ class HorizonPipelineService:
 
         enrich_result: dict[str, Any] | None = None
         stage_for_summary = "filtered"
-        if enrich:
+        if enrich and filter_result["kept"] > 0:
             enrich_result = await self.enrich_items(
                 run_id=run_id,
                 source_stage="filtered",
@@ -654,10 +707,11 @@ class HorizonPipelineService:
         )
 
         webhook_config = ctx.config.webhook
-        if not webhook_config or not webhook_config.enabled:
+        if not webhook_config:
             return {
                 "sent": False,
-                "reason": "Webhook is not enabled in configuration.",
+                "status": "disabled",
+                "reason": "Webhook is not configured.",
             }
 
         notifier = WebhookNotifier(webhook_config)
@@ -673,9 +727,9 @@ class HorizonPipelineService:
             "summary": summary,
         }
 
-        await notifier.notify(variables)
+        delivery = await notifier.notify(variables)
 
         return {
-            "sent": True,
+            **delivery.to_dict(),
             "variables": {k: (v if k != "summary" else f"<{len(v)} chars>") for k, v in variables.items()},
         }

@@ -7,6 +7,7 @@ import httpx
 
 from .base import BaseExtractor
 from ..models import TrafilaturaExtractorConfig
+from ..url_security import UnsafeURLError, safe_request
 
 logger = logging.getLogger(__name__)
 
@@ -23,9 +24,9 @@ class TrafilaturaExtractor(BaseExtractor):
             return None
 
         try:
-            response = await client.get(url, follow_redirects=True)
+            response = await safe_request(client, "GET", url)
             response.raise_for_status()
-        except httpx.HTTPError as e:
+        except (httpx.HTTPError, UnsafeURLError) as e:
             logger.warning("Failed to fetch article %s: %s", url, e)
             return None
 

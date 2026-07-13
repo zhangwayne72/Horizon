@@ -4,8 +4,9 @@ import json
 import os
 import re
 import shutil
+import tempfile
 from pathlib import Path
-from typing import Any
+from typing import Any, Optional
 
 from pydantic import ValidationError
 
@@ -15,6 +16,15 @@ from ..models import Config
 # Matches ${VAR_NAME} in string config values. Names follow env-var rules
 # (ASCII letters, digits, underscore; must not start with a digit).
 _ENV_VAR_PATTERN = re.compile(r"\$\{([A-Za-z_][A-Za-z0-9_]*)\}")
+
+
+def safe_output_path(root: Path, filename: str) -> Path:
+    """Return an output path only when it resolves below root."""
+    resolved_root = root.resolve()
+    candidate = (resolved_root / filename).resolve()
+    if candidate.parent != resolved_root:
+        raise ValueError(f"Output path escapes intended root: {candidate}")
+    return candidate
 
 
 def _expand_env_vars(value: Any) -> Any:
@@ -48,6 +58,26 @@ class ConfigError(ValueError):
     """Raised when configuration is missing or invalid."""
 
     pass
+
+
+def _atomic_write_text(path: Path, content: str) -> None:
+    """Write text via a same-directory temporary file and atomic replacement."""
+    temp_path: Optional[Path] = None
+    try:
+        with tempfile.NamedTemporaryFile(
+            mode="w",
+            encoding="utf-8",
+            dir=path.parent,
+            prefix=f".{path.name}.",
+            suffix=".tmp",
+            delete=False,
+        ) as temp_file:
+            temp_path = Path(temp_file.name)
+            temp_file.write(content)
+        os.replace(temp_path, path)
+    finally:
+        if temp_path is not None:
+            temp_path.unlink(missing_ok=True)
 
 
 class StorageManager:
@@ -102,18 +132,18 @@ class StorageManager:
         if backup and self.config_path.exists():
             shutil.copy2(self.config_path, self.config_path.with_suffix(".json.bak"))
 
-        with open(self.config_path, "w", encoding="utf-8") as f:
-            json.dump(config.model_dump(mode="json"), f, indent=2, ensure_ascii=False)
-            f.write("\n")
+        content = json.dumps(
+            config.model_dump(mode="json"), indent=2, ensure_ascii=False
+        )
+        _atomic_write_text(self.config_path, f"{content}\n")
 
         return self.config_path
 
     def save_daily_summary(self, date: str, markdown: str, language: str = "en") -> Path:
         filename = f"horizon-{date}-{language}.md"
-        filepath = self.summaries_dir / filename
+        filepath = safe_output_path(self.summaries_dir, filename)
 
-        with open(filepath, "w", encoding="utf-8") as f:
-            f.write(markdown)
+        _atomic_write_text(filepath, markdown)
 
         return filepath
 
@@ -146,5 +176,4 @@ class StorageManager:
     def _save_subscribers(self, subscribers: list):
         """Helper to save subscribers list."""
         subscribers_path = self.data_dir / "subscribers.json"
-        with open(subscribers_path, "w", encoding="utf-8") as f:
-            json.dump(subscribers, f, indent=2)
+        _atomic_write_text(subscribers_path, json.dumps(subscribers, indent=2))

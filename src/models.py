@@ -2,7 +2,8 @@
 
 from datetime import datetime, timezone
 from enum import Enum
-from typing import Annotated, Literal, Optional, List, Dict, Any, Union
+import re
+from typing import Annotated, Literal, Optional, List, Dict, Any, NamedTuple, Union
 from pydantic import BaseModel, HttpUrl, Field, field_validator
 
 
@@ -19,6 +20,28 @@ class SourceType(str, Enum):
     OSSINSIGHT = "ossinsight"
     GDELT = "gdelt"
     GOOGLE_NEWS = "google_news"
+
+
+class SourceDefinition(NamedTuple):
+    """How a top-level source is represented in SourcesConfig."""
+
+    config_field: str
+    config_is_list: bool = False
+    item_fields: tuple[str, ...] = ()
+
+
+SOURCE_REGISTRY = {
+    SourceType.GITHUB.value: SourceDefinition("github", config_is_list=True),
+    SourceType.HACKERNEWS.value: SourceDefinition("hackernews"),
+    SourceType.RSS.value: SourceDefinition("rss", config_is_list=True),
+    SourceType.REDDIT.value: SourceDefinition("reddit", item_fields=("subreddits", "users")),
+    SourceType.TELEGRAM.value: SourceDefinition("telegram", item_fields=("channels",)),
+    SourceType.TWITTER.value: SourceDefinition("twitter", item_fields=("users",)),
+    SourceType.OPENBB.value: SourceDefinition("openbb", item_fields=("watchlists",)),
+    SourceType.OSSINSIGHT.value: SourceDefinition("ossinsight"),
+    SourceType.GDELT.value: SourceDefinition("gdelt"),
+    SourceType.GOOGLE_NEWS.value: SourceDefinition("google_news"),
+}
 
 
 class ContentItem(BaseModel):
@@ -113,6 +136,16 @@ class AIConfig(BaseModel):
     # Azure OpenAI specific; required when provider == AZURE
     azure_endpoint_env: Optional[str] = None
     api_version: Optional[str] = None
+
+    @field_validator("languages")
+    @classmethod
+    def validate_languages(cls, languages: List[str]) -> List[str]:
+        """Allow conventional language tags while excluding path syntax."""
+        language_tag = re.compile(r"^[A-Za-z]{2,8}(?:[-_][A-Za-z0-9]{1,8})*$")
+        invalid = [language for language in languages if not language_tag.fullmatch(language)]
+        if invalid:
+            raise ValueError(f"invalid language code: {invalid[0]!r}")
+        return languages
 
 
 class GitHubSourceConfig(BaseModel):
