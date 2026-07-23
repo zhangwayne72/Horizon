@@ -30,7 +30,7 @@
     "reddit": { "enabled": false }
   },
   "filtering": {
-    "ai_score_threshold": 1.0,
+    "ai_score_threshold": 5.0,
     "time_window_hours": 24,
     "max_items": 15
   },
