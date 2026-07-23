@@ -9,19 +9,14 @@
     "max_tokens": 2048,
     "throttle_sec": 0.1,
     "analysis_concurrency": 5,
-    "enrichment_concurrency": 2
+    "enrichment_concurrency": 2,
+    "system_prompt": "You are a professional financial analyst. CRITICAL: Regardless of the language of the prompt or inputs, you MUST analyze, summarize, and output the final response entirely in Simplified Chinese (简体中文). Do not use English for the summary output."
   },
   "sources": {
     "rss": [
       {
-        "name": "新华网-财经",
-        "url": "http://www.news.cn/fortune/rss.xml",
-        "enabled": true,
-        "category": "finance"
-      },
-      {
-        "name": "国际金融报",
-        "url": "http://www.ifnews.com/rss.php",
+        "name": "FT中文网-今日焦点",
+        "url": "https://www.ftchinese.com/rss/feed",
         "enabled": true,
         "category": "finance"
       }
@@ -53,7 +48,7 @@
         "header": {
           "title": {
             "tag": "plain_text",
-            "content": "Horizon 财经日报 (请使用中文输出)"
+            "content": "财经日报"
           },
           "template": "blue"
         },
@@ -61,7 +56,7 @@
           "elements": [
             {
               "tag": "markdown",
-              "content": "请注意：如果以下摘要为英文，请自动在心中或由模型转换为中文阅读。\n\n#{summary}"
+              "content": "Horizon今日生成结果:\n\n#{summary}"
             }
           ]
         }
