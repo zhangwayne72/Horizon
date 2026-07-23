@@ -108,7 +108,7 @@
     "platform": "feishu",
     "layout": "markdown",
     "fallback_layout": "markdown",
-    "languages": ["zh"],
+    "languages": ["zh", "en"],
     "request_body": {
       "msg_type": "interactive",
       "card": {
