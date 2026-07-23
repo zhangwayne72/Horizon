@@ -1,14 +1,15 @@
 {
   "version": "1.0",
   "ai": {
-    "provider": "gemini",
-    "model": "gemini-2.5-flash-lite",
-    "api_key_env": "GEMINI_API_KEY",
+    "provider": "openai",
+    "model": "deepseek-v4-flash",
+    "api_key_env": "DS_API_KEY",
+    "base_url": "https://api.deepseek.com/v1",
     "temperature": 0.2,
     "max_tokens": 2048,
-    "throttle_sec": 1.0,
-    "analysis_concurrency": 1,
-    "enrichment_concurrency": 1
+    "throttle_sec": 0.1,
+    "analysis_concurrency": 5,
+    "enrichment_concurrency": 2
   },
   "email": {
     "enabled": false,
@@ -30,14 +31,14 @@
     },
     "rss": [
       {
-        "name": "FT中文网-今日焦点",
-        "url": "https://www.ftchinese.com/rss/feed",
+        "name": "财联社电报(高可用镜像)",
+        "url": "https://rsshub.moeyy.xyz/cls/telegraph",
         "enabled": true,
         "category": "finance"
       },
       {
-        "name": "华尔街见闻-资讯",
-        "url": "https://wallstreetcn.com/rss",
+        "name": "FT中文网-今日焦点",
+        "url": "https://www.ftchinese.com/rss/feed",
         "enabled": true,
         "category": "finance"
       }
@@ -107,7 +108,7 @@
     "platform": "feishu",
     "layout": "markdown",
     "fallback_layout": "markdown",
-    "languages": ["zh", "en"],
+    "languages": ["zh"],
     "request_body": {
       "msg_type": "interactive",
       "card": {
