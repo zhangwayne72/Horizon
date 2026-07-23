@@ -5,32 +5,53 @@
     "model": "gemini-2.5-flash",
     "api_key_env": "GEMINI_API_KEY",
     "temperature": 0.2,
-    "max_tokens": 4096,
+    "max_tokens": 2048,
     "throttle_sec": 1.0,
     "analysis_concurrency": 1,
     "enrichment_concurrency": 1
   },
+  "email": {
+    "enabled": false
+  },
   "sources": {
-    "rss": [],
+    "github": [],
     "hackernews": {
-      "enabled": false
+      "enabled": true
     },
+    "rss": [
+      {
+        "name": "财联社电报",
+        "url": "https://feeds.crabpi.com/cls-telegraph",
+        "enabled": true,
+        "category": "finance"
+      }
+    ],
     "reddit": {
       "enabled": false
     },
-    "llm_search": {
-      "enabled": true,
-      "queries": [
-        "今日中国财经要闻 A股重大公告 宏观经济数据",
-        "财联社电报 核心商业快讯 行业动态"
-      ],
-      "days_back": 1
+    "twitter": {
+      "enabled": false
+    },
+    "openbb": {
+      "enabled": false
+    },
+    "ossinsight": {
+      "enabled": false
+    },
+    "gdelt": {
+      "enabled": false
+    },
+    "google_news": {
+      "enabled": false
     }
   },
   "filtering": {
-    "ai_score_threshold": 0.0,
+    "ai_score_threshold": 1.0,
     "time_window_hours": 24,
-    "max_items": 15
+    "max_items": 15,
+    "category_groups": {},
+    "default_group": "other",
+    "default_group_limit": null
   },
   "webhook": {
     "enabled": true,
