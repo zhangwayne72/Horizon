@@ -24,14 +24,14 @@
   "sources": {
     "github": [],
     "hackernews": {
-      "enabled": true,
+      "enabled": false,
       "fetch_top_stories": 20,
       "min_score": 100
     },
     "rss": [
       {
-        "name": "财联社电报",
-        "url": "https://feeds.crabpi.com/cls-telegraph",
+        "name": "财联社电报(高可用镜像)",
+        "url": "https://rsshub.moeyy.xyz/cls/telegraph",
         "enabled": true,
         "category": "finance"
       }
@@ -101,7 +101,7 @@
     "platform": "feishu",
     "layout": "markdown",
     "fallback_layout": "markdown",
-    "languages": ["zh"],
+    "languages": ["zh", "en"],
     "request_body": {
       "msg_type": "interactive",
       "card": {
