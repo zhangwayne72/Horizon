@@ -2,38 +2,38 @@
   "version": "1.0",
   "ai": {
     "provider": "gemini",
-    "model": "gemini-2.5-flash",
+    "model": "gemini-1.5-flash",
     "api_key_env": "GEMINI_API_KEY",
     "temperature": 0.2,
     "max_tokens": 2048,
-    "throttle_sec": 1.0,
+    "throttle_sec": 1.5,
     "analysis_concurrency": 1,
     "enrichment_concurrency": 1
   },
   "sources": {
     "rss": [
       {
-        "name": "财联社电报",
-        "url": "https://feeds.crabpi.com/cls-telegraph",
+        "name": "财联社电报主线",
+        "url": "https://rss.rsshub.app/cls/telegraph",
         "enabled": true,
         "category": "finance"
       },
       {
-        "name": "证券时报网",
-        "url": "http://www.stcn.com/rss/scroll.xml",
-        "enabled": true,
-        "category": "finance"
-      },
-      {
-        "name": "东方财富网-滚动新闻",
-        "url": "http://rss.eastmoney.com/news/gundong.xml",
+        "name": "华尔街见闻实时快讯",
+        "url": "https://rss.rsshub.app/wallstreetcn/live",
         "enabled": true,
         "category": "finance"
       }
-    ]
+    ],
+    "hackernews": {
+      "enabled": false
+    },
+    "reddit": {
+      "enabled": false
+    }
   },
   "filtering": {
-    "ai_score_threshold": 5.0,
+    "ai_score_threshold": 1.0,
     "time_window_hours": 24,
     "max_items": 15
   },
@@ -45,7 +45,7 @@
     "platform": "feishu",
     "layout": "markdown",
     "fallback_layout": "markdown",
-    "languages": ["zh", "en"],
+    "languages": ["zh"],
     "request_body": {
       "msg_type": "interactive",
       "card": {
