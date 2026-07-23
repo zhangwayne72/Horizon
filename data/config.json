@@ -2,25 +2,31 @@
   "version": "1.0",
   "ai": {
     "provider": "gemini",
-    "model": "gemini-1.5-flash",
+    "model": "gemini-2.5-flash",
     "api_key_env": "GEMINI_API_KEY",
     "temperature": 0.2,
     "max_tokens": 2048,
-    "throttle_sec": 1.5,
-    "analysis_concurrency": 1,
-    "enrichment_concurrency": 1
+    "throttle_sec": 0.2,
+    "analysis_concurrency": 5,
+    "enrichment_concurrency": 2
   },
   "sources": {
     "rss": [
       {
-        "name": "财联社电报主线",
-        "url": "https://rss.rsshub.app/cls/telegraph",
+        "name": "金十数据-市场快讯",
+        "url": "https://feeds.feedburner.com/jin10_live",
         "enabled": true,
         "category": "finance"
       },
       {
-        "name": "华尔街见闻实时快讯",
-        "url": "https://rss.rsshub.app/wallstreetcn/live",
+        "name": "联合早报-中国财经",
+        "url": "https://www.zaobao.com.sg/rss/zhao-yang/finance/china",
+        "enabled": true,
+        "category": "finance"
+      },
+      {
+        "name": "财新网-经济与金融",
+        "url": "https://www.caixin.com/rss/finance_and_economics.xml",
         "enabled": true,
         "category": "finance"
       }
@@ -33,7 +39,7 @@
     }
   },
   "filtering": {
-    "ai_score_threshold": 1.0,
+    "ai_score_threshold": 2.0,
     "time_window_hours": 24,
     "max_items": 15
   },
