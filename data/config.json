@@ -1,0 +1,88 @@
+{
+  "version": "1.0",
+  "ai": {
+    "provider": "gemini",
+    "model": "gemini-2.5-flash",
+    "api_key_env": "GEMINI_API_KEY",
+    "temperature": 0.3,
+    "max_tokens": 4096,
+    "throttle_sec": 0,
+    "analysis_concurrency": 1,
+    "enrichment_concurrency": 1
+  },
+  "sources": {
+    "rss": [
+      {
+        "name": "财联社电报",
+        "url": "https://feeds.crabpi.com/cls-telegraph",
+        "enabled": true,
+        "category": "finance"
+      },
+      {
+        "name": "格隆汇-首页精选",
+        "url": "https://rsshub.app/gelonghui/home",
+        "enabled": true,
+        "category": "finance"
+      },
+      {
+        "name": "格隆汇-热门文章",
+        "url": "https://rsshub.app/gelonghui/hot-article",
+        "enabled": true,
+        "category": "finance"
+      },
+      {
+        "name": "格隆汇-主题聚焦",
+        "url": "https://rsshub.app/gelonghui/subject/4",
+        "enabled": true,
+        "category": "finance"
+      }
+    ]
+  },
+  "filtering": {
+    "ai_score_threshold": 5.0,
+    "time_window_hours": 24,
+    "max_items": 15
+  },
+  "webhook": {
+    "enabled": true,
+    "url_env": "FEISHU_WEBHOOK_URL",
+    "delivery": "summary",
+    "overview_position": "first",
+    "platform": "feishu",
+    "layout": "markdown",
+    "fallback_layout": "markdown",
+    "languages": ["zh"],
+    "request_body": {
+      "msg_type": "interactive",
+      "card": {
+        "schema": "2.0",
+        "config": {
+          "wide_screen_mode": true
+        },
+        "header": {
+          "title": {
+            "tag": "plain_text",
+            "content": "#{message_title}"
+          },
+          "template": "blue"
+        },
+        "body": {
+          "elements": [
+            {
+              "tag": "markdown",
+              "content": "Horizon生成结果: #{result}\nHorizon日报重要资讯数量: #{important_items}/#{all_items}"
+            },
+            {
+              "tag": "hr"
+            },
+            {
+              "tag": "markdown",
+              "content": "#{summary}"
+            }
+          ]
+        }
+      }
+    },
+    "headers": ""
+  }
+}
