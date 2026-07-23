@@ -5,31 +5,32 @@
     "model": "gemini-2.5-flash",
     "api_key_env": "GEMINI_API_KEY",
     "temperature": 0.2,
-    "max_tokens": 2048,
-    "throttle_sec": 0.2,
-    "analysis_concurrency": 5,
-    "enrichment_concurrency": 2
+    "max_tokens": 4096,
+    "throttle_sec": 1.0,
+    "analysis_concurrency": 1,
+    "enrichment_concurrency": 1
   },
   "sources": {
-    "rss": [
-      {
-        "name": "财联社电报",
-        "url": "https://feeds.crabpi.com/cls-telegraph",
-        "enabled": true,
-        "category": "finance"
-      }
-    ],
+    "rss": [],
     "hackernews": {
       "enabled": false
     },
     "reddit": {
       "enabled": false
+    },
+    "llm_search": {
+      "enabled": true,
+      "queries": [
+        "今日中国财经要闻 A股重大公告 宏观经济数据",
+        "财联社电报 核心商业快讯 行业动态"
+      ],
+      "days_back": 1
     }
   },
   "filtering": {
-    "ai_score_threshold": 1.0,
-    "time_window_hours": 168,
-    "max_items": 20
+    "ai_score_threshold": 0.0,
+    "time_window_hours": 24,
+    "max_items": 15
   },
   "webhook": {
     "enabled": true,
@@ -71,6 +72,6 @@
         }
       }
     },
-    "headers": "User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36\nAccept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8\nAccept-Language: zh-CN,zh;q=0.9"
+    "headers": ""
   }
 }
