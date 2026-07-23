@@ -13,8 +13,14 @@
   "sources": {
     "rss": [
       {
-        "name": "财联社电报",
-        "url": "https://feeds.crabpi.com/cls-telegraph",
+        "name": "路透社中文-中国财经",
+        "url": "https://cn.reuters.com/rss/china-business",
+        "enabled": true,
+        "category": "finance"
+      },
+      {
+        "name": "华尔街日报-中国经济",
+        "url": "https://cn.wsj.com/rss/china",
         "enabled": true,
         "category": "finance"
       }
@@ -29,7 +35,7 @@
   "filtering": {
     "ai_score_threshold": 1.0,
     "time_window_hours": 168,
-    "max_items": 20
+    "max_items": 15
   },
   "webhook": {
     "enabled": true,
