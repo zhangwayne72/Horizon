@@ -13,20 +13,8 @@
   "sources": {
     "rss": [
       {
-        "name": "金十数据-市场快讯",
-        "url": "https://feeds.feedburner.com/jin10_live",
-        "enabled": true,
-        "category": "finance"
-      },
-      {
-        "name": "联合早报-中国财经",
-        "url": "https://www.zaobao.com.sg/rss/zhao-yang/finance/china",
-        "enabled": true,
-        "category": "finance"
-      },
-      {
-        "name": "财新网-经济与金融",
-        "url": "https://www.caixin.com/rss/finance_and_economics.xml",
+        "name": "财联社电报",
+        "url": "https://feeds.crabpi.com/cls-telegraph",
         "enabled": true,
         "category": "finance"
       }
@@ -39,9 +27,9 @@
     }
   },
   "filtering": {
-    "ai_score_threshold": 2.0,
-    "time_window_hours": 24,
-    "max_items": 15
+    "ai_score_threshold": 1.0,
+    "time_window_hours": 72,
+    "max_items": 20
   },
   "webhook": {
     "enabled": true,
