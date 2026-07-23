@@ -2,7 +2,7 @@
   "version": "1.0",
   "ai": {
     "provider": "gemini",
-    "model": "gemini-2.5-flash",
+    "model": "gemini-1.5-flash",
     "api_key_env": "GEMINI_API_KEY",
     "temperature": 0.3,
     "max_tokens": 4096,
@@ -19,20 +19,20 @@
         "category": "finance"
       },
       {
-        "name": "格隆汇-首页精选",
-        "url": "https://rsshub.app/gelonghui/home",
+        "name": "新浪财经-滚动新闻",
+        "url": "https://feedx.net/rss/sinafinance.xml",
         "enabled": true,
         "category": "finance"
       },
       {
-        "name": "格隆汇-热门文章",
-        "url": "https://rsshub.app/gelonghui/hot-article",
+        "name": "网易财经-股票要闻",
+        "url": "https://money.163.com/special/00252G15/money_rss.xml",
         "enabled": true,
         "category": "finance"
       },
       {
-        "name": "格隆汇-主题聚焦",
-        "url": "https://rsshub.app/gelonghui/subject/4",
+        "name": "华尔街见闻-快讯",
+        "url": "https://feedx.net/rss/wallstreetcn.xml",
         "enabled": true,
         "category": "finance"
       }
@@ -51,7 +51,7 @@
     "platform": "feishu",
     "layout": "markdown",
     "fallback_layout": "markdown",
-    "languages": ["zh"],
+    "languages": ["zh", "en"],
     "request_body": {
       "msg_type": "interactive",
       "card": {
