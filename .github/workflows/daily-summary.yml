@@ -34,7 +34,7 @@ jobs:
         # 核心：精准传入你配置的飞书和 Gemini 密钥
         FEISHU_WEBHOOK_URL: ${{ secrets.FEISHU_WEBHOOK_URL }}
         GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
-      run: uv run horizon --hours 24
+      run: uv run horizon --hours 168
 
     - name: Set current date as environment variable
       run: echo "DATE=$(date +'%Y-%m-%d')" >> $GITHUB_ENV
