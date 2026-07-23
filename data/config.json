@@ -30,8 +30,14 @@
     },
     "rss": [
       {
-        "name": "财联社电报(高可用镜像)",
-        "url": "https://rsshub.moeyy.xyz/cls/telegraph",
+        "name": "FT中文网-今日焦点",
+        "url": "https://www.ftchinese.com/rss/feed",
+        "enabled": true,
+        "category": "finance"
+      },
+      {
+        "name": "华尔街见闻-资讯",
+        "url": "https://wallstreetcn.com/rss",
         "enabled": true,
         "category": "finance"
       }
