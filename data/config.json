@@ -2,11 +2,11 @@
   "version": "1.0",
   "ai": {
     "provider": "gemini",
-    "model": "gemini-1.5-flash",
+    "model": "gemini-2.5-flash",
     "api_key_env": "GEMINI_API_KEY",
-    "temperature": 0.3,
-    "max_tokens": 4096,
-    "throttle_sec": 0,
+    "temperature": 0.2,
+    "max_tokens": 2048,
+    "throttle_sec": 1.0,
     "analysis_concurrency": 1,
     "enrichment_concurrency": 1
   },
@@ -19,27 +19,21 @@
         "category": "finance"
       },
       {
-        "name": "新浪财经-滚动新闻",
-        "url": "https://feedx.net/rss/sinafinance.xml",
+        "name": "证券时报网",
+        "url": "http://www.stcn.com/rss/scroll.xml",
         "enabled": true,
         "category": "finance"
       },
       {
-        "name": "网易财经-股票要闻",
-        "url": "https://money.163.com/special/00252G15/money_rss.xml",
-        "enabled": true,
-        "category": "finance"
-      },
-      {
-        "name": "华尔街见闻-快讯",
-        "url": "https://feedx.net/rss/wallstreetcn.xml",
+        "name": "东方财富网-滚动新闻",
+        "url": "http://rss.eastmoney.com/news/gundong.xml",
         "enabled": true,
         "category": "finance"
       }
     ]
   },
   "filtering": {
-    "ai_score_threshold": 2.0,
+    "ai_score_threshold": 1.0,
     "time_window_hours": 24,
     "max_items": 15
   },
