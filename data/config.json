@@ -11,94 +11,28 @@
     "analysis_concurrency": 5,
     "enrichment_concurrency": 2
   },
-  "email": {
-    "enabled": false,
-    "smtp_server": "smtp.qq.com",
-    "smtp_port": 465,
-    "imap_server": "imap.qq.com",
-    "imap_port": 993,
-    "email_address": "placeholder@qq.com",
-    "sender_name": "Horizon Daily",
-    "subscribe_keyword": "SUBSCRIBE",
-    "unsubscribe_keyword": "UNSUBSCRIBE"
-  },
   "sources": {
-    "github": [],
-    "hackernews": {
-      "enabled": false,
-      "fetch_top_stories": 20,
-      "min_score": 100
-    },
     "rss": [
       {
-        "name": "财联社电报(高可用镜像)",
-        "url": "https://rsshub.moeyy.xyz/cls/telegraph",
+        "name": "新华网-财经",
+        "url": "http://www.news.cn/fortune/rss.xml",
         "enabled": true,
         "category": "finance"
       },
       {
-        "name": "FT中文网-今日焦点",
-        "url": "https://www.ftchinese.com/rss/feed",
+        "name": "国际金融报",
+        "url": "http://www.ifnews.com/rss.php",
         "enabled": true,
         "category": "finance"
       }
     ],
-    "reddit": {
-      "enabled": false,
-      "subreddits": [],
-      "users": [],
-      "fetch_comments": 5
-    },
-    "twitter": {
-      "enabled": false,
-      "users": [],
-      "fetch_limit": 10,
-      "fetch_reply_text": false,
-      "max_replies_per_tweet": 3,
-      "max_tweets_to_expand": 10,
-      "reply_min_likes": 5
-    },
-    "openbb": {
-      "enabled": false,
-      "fetch_filings": false,
-      "filings_provider": "sec",
-      "watchlists": []
-    },
-    "ossinsight": {
-      "enabled": false,
-      "period": "past_24_hours",
-      "languages": [],
-      "keywords": [],
-      "min_stars": 10,
-      "max_items": 30
-    },
-    "gdelt": {
-      "enabled": false,
-      "query": "artificial intelligence",
-      "mode": "ArtList",
-      "max_records": 75,
-      "timespan": null,
-      "language": null,
-      "country": null,
-      "category": "news"
-    },
-    "google_news": {
-      "enabled": false,
-      "query": "artificial intelligence",
-      "language": "en",
-      "country": "US",
-      "ceid": null,
-      "max_results": 100,
-      "category": "news"
-    }
+    "hackernews": { "enabled": false },
+    "reddit": { "enabled": false }
   },
   "filtering": {
-    "ai_score_threshold": 5.0,
+    "ai_score_threshold": 1.0,
     "time_window_hours": 24,
-    "max_items": 15,
-    "category_groups": {},
-    "default_group": "other",
-    "default_group_limit": null
+    "max_items": 15
   },
   "webhook": {
     "enabled": true,
@@ -108,7 +42,7 @@
     "platform": "feishu",
     "layout": "markdown",
     "fallback_layout": "markdown",
-    "languages": ["zh", "en"],
+    "languages": ["zh", "en"], 
     "request_body": {
       "msg_type": "interactive",
       "card": {
@@ -119,7 +53,7 @@
         "header": {
           "title": {
             "tag": "plain_text",
-            "content": "#{message_title}"
+            "content": "Horizon 财经日报 (请使用中文输出)"
           },
           "template": "blue"
         },
@@ -127,14 +61,7 @@
           "elements": [
             {
               "tag": "markdown",
-              "content": "Horizon生成结果: #{result}\nHorizon日报重要资讯数量: #{important_items}/#{all_items}"
-            },
-            {
-              "tag": "hr"
-            },
-            {
-              "tag": "markdown",
-              "content": "#{summary}"
+              "content": "请注意：如果以下摘要为英文，请自动在心中或由模型转换为中文阅读。\n\n#{summary}"
             }
           ]
         }
