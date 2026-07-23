@@ -15,8 +15,8 @@
   "sources": {
     "rss": [
       {
-        "name": "FT中文网-今日焦点",
-        "url": "https://www.ftchinese.com/rss/feed",
+        "name": "财联社快讯",
+        "url": "https://feeds.crabpi.com/cls-telegraph",
         "enabled": true,
         "category": "finance"
       }
@@ -56,7 +56,7 @@
           "elements": [
             {
               "tag": "markdown",
-              "content": "Horizon今日生成结果:\n\n#{summary}"
+              "content": "今日生成结果:\n\n#{summary}"
             }
           ]
         }
