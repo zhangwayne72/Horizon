@@ -5,7 +5,7 @@
     "model": "gemini-2.5-flash",
     "api_key_env": "GEMINI_API_KEY",
     "temperature": 0.2,
-    "max_tokens": 2048,
+    "max_tokens": 4096,
     "throttle_sec": 0.1,
     "languages": [
       "zh"
