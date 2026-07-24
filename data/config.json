@@ -1,9 +1,10 @@
 {
   "version": "1.0",
   "ai": {
-    "provider": "gemini",
-    "model": "gemini-2.5-flash",
-    "api_key_env": "GEMINI_API_KEY",
+    "provider": "openai",
+    "model": "deepseek-v4-flash",
+    "api_key_env": "DS_API_KEY",
+    "base_url": "https://api.deepseek.com/v1",
     "temperature": 0.2,
     "max_tokens": 4096,
     "throttle_sec": 0.1,
