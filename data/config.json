@@ -16,7 +16,7 @@
     "rss": [
       {
         "name": "财联社快讯",
-        "url": "https://feeds.crabpi.com/cls-telegraph",
+        "url": "https://rss.08182005.xyz/cls/telegraph/2",
         "enabled": true,
         "category": "finance"
       }
