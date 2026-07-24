@@ -8,7 +8,9 @@
     "temperature": 0.2,
     "max_tokens": 2048,
     "throttle_sec": 0.1,
-    "languages": ["zh"]
+    "languages": [
+      "zh"
+    ]
   },
   "sources": {
     "rss": [
@@ -25,8 +27,14 @@
         "category": "finance"
       },
       {
-        "name": "华尔街见闻 - 全球快讯",
-        "url": "https://rss.08182005.xyz/wallstreetcn/news/global",
+        "name": "东方财富 - 财经快讯",
+        "url": "https://rss.08182005.xyz/eastmoney/report/1",
+        "enabled": true,
+        "category": "finance"
+      },
+      {
+        "name": "巨潮资讯网 - 当日公告",
+        "url": "https://rss.08182005.xyz/cninfo/announcement",
         "enabled": true,
         "category": "finance"
       },
@@ -70,7 +78,7 @@
         "header": {
           "title": {
             "tag": "plain_text",
-            "content": "财经日报"
+            "content": "财经&公告日报"
           },
           "template": "blue"
         },
