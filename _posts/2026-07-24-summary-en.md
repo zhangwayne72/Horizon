@@ -5,36 +5,36 @@ date: 2026-07-24
 lang: en
 ---
 
-> From 81 items, 15 important content pieces were selected
+> From 91 items, 15 important content pieces were selected
 
 ---
 
-1. [EU Fines Google €890 Million Under Digital Markets Act](#item-1) ⭐️ 8.0/10
-2. [State Council Forms Investigation Team for Guangxi Dam Collapse](#item-2) ⭐️ 8.0/10
-3. [Visa and Lianlian Complete First B2B AI Agent Transaction in Greater China](#item-3) ⭐️ 8.0/10
-4. [DeepSeek: China&\#x27;s AI Gap Is Compute, Not Ecosystem](#item-4) ⭐️ 8.0/10
-5. [Alphabet Q2: Cloud Growth, Capex Surge, TPU Accounting, SpaceX Lease](#item-5) ⭐️ 8.0/10
-6. [AI&\#x27;s Financial Moment: $3.5 Trillion Financing Gap](#item-6) ⭐️ 8.0/10
-7. [China cracks 170+ AI rumor cases in H1 2025](#item-7) ⭐️ 7.0/10
-8. [Tencent Merges LLM and Multimodal Teams into Foundational Model Unit](#item-8) ⭐️ 7.0/10
-9. [Morgan Stanley Warns AI Memory Boom Nears Peak, Prices to Top in Q4 2026](#item-9) ⭐️ 7.0/10
-10. [US vs China AI Models: Two Paths, 2027 Decisive?](#item-10) ⭐️ 7.0/10
-11. [Asian Tech Stocks Plunge on AI Spending Doubts and Oil Surge](#item-11) ⭐️ 7.0/10
-12. [Singapore&\#x27;s GIC: Chinese AI to Lower Global Costs, Boost Adoption](#item-12) ⭐️ 7.0/10
-13. [Meta&\#x27;s $12B AI Bond Faces Higher Borrowing Costs](#item-13) ⭐️ 7.0/10
-14. [Citi Warns Commodities Enter &\#x27;High-Frequency Black Swan&\#x27; Era](#item-14) ⭐️ 7.0/10
-15. [Musk: AI may end humanity, but I&\#x27;d still take the ride](#item-15) ⭐️ 7.0/10
+1. [EU Fines Google €890 Million for Self-Preferencing](#item-1) ⭐️ 8.0/10
+2. [Visa and Lianlian Complete First B2B AI Agent Transaction in Greater China](#item-2) ⭐️ 8.0/10
+3. [DeepSeek: China&\#x27;s AI Gap Is Compute, Not Ecosystem](#item-3) ⭐️ 8.0/10
+4. [Alphabet Q2 Earnings: Cloud Growth, Capex Surge, TPU Accounting, SpaceX Lease](#item-4) ⭐️ 8.0/10
+5. [AI Infrastructure Financing: $3.5 Trillion Funding Gap](#item-5) ⭐️ 8.0/10
+6. [Tencent to Deploy NPO Supernodes by 2026Q4](#item-6) ⭐️ 8.0/10
+7. [State Council Investigates Guangxi Dam Collapse Disaster](#item-7) ⭐️ 7.0/10
+8. [China&\#x27;s Public Security Ministry Handles 170+ AI Rumor Cases in H1](#item-8) ⭐️ 7.0/10
+9. [Tencent Merges LLM and Multimodal Teams](#item-9) ⭐️ 7.0/10
+10. [Morgan Stanley Warns AI Memory Boom Nears Peak](#item-10) ⭐️ 7.0/10
+11. [US vs China AI Models: 2027 as the Decisive Inflection Point](#item-11) ⭐️ 7.0/10
+12. [Tech Stocks Plunge on AI Spending Doubts, Oil Surges Above $100](#item-12) ⭐️ 7.0/10
+13. [GIC: Chinese AI Models to Lower Global AI Costs](#item-13) ⭐️ 7.0/10
+14. [Meta&\#x27;s $12B AI Bond Deal Signals Rising Borrowing Costs](#item-14) ⭐️ 7.0/10
+15. [Citi Warns Commodity Markets Enter &\#x27;High-Frequency Black Swan&\#x27; Era](#item-15) ⭐️ 7.0/10
 
 ---
 
 <a id="item-1"></a>
-## [EU Fines Google €890 Million Under Digital Markets Act](https://www.yicai.com/brief/103290790.html) ⭐️ 8.0/10
+## [EU Fines Google €890 Million for Self-Preferencing](https://www.yicai.com/brief/103290790.html) ⭐️ 8.0/10
 
-The European Commission fined Google €890 million for violating the Digital Markets Act by self-preferencing its own services in search results and restricting app developers from directing users to alternative app stores. This is the first major penalty under the DMA, signaling the EU&\#x27;s commitment to enforcing fair competition in digital markets and setting a precedent for regulating Big Tech gatekeepers. Google must comply within 60 days by treating third-party services fairly in search results and allowing app developers to promote offers outside Google Play, or face additional fines.
+The European Commission fined Google €890 million for violating the Digital Markets Act by self-preferencing its own services in search results and restricting app developers from directing users to alternative app stores. This is the first major penalty under the EU&\#x27;s Digital Markets Act, signaling a tough enforcement stance that could reshape how dominant platforms like Google operate in Europe and influence global tech regulation. The fine covers two violations: self-preferencing in search for shopping, hotels, transport, and sports services, and anti-steering restrictions on the Google Play Store. Google must comply within 60 days or face additional penalties.
 
 rss · 第一财经 - 快讯 · Jul 24, 04:51
 
-**Background**: The Digital Markets Act \(DMA\) is an EU regulation that targets large online platforms designated as &\#x27;gatekeepers,&\#x27; imposing obligations to prevent anti-competitive practices like self-preferencing. Google, as a gatekeeper, must ensure its services do not receive preferential treatment over rivals. The DMA became applicable in May 2023.
+**Background**: The Digital Markets Act \(DMA\) is an EU regulation that targets large online platforms designated as &\#x27;gatekeepers,&\#x27; imposing obligations to ensure fair competition. It prohibits practices like self-preferencing and anti-steering, which can stifle competition and consumer choice. Google, as a gatekeeper, must comply with these rules since March 2024.
 
 <details><summary>References</summary>
 <ul>
@@ -44,46 +44,23 @@ rss · 第一财经 - 快讯 · Jul 24, 04:51
 </ul>
 </details>
 
-**Tags**: `#antitrust`, `#regulation`, `#Google`, `#Digital Markets Act`, `#EU`
+**Tags**: `#Google`, `#EU regulation`, `#Digital Markets Act`, `#antitrust`, `#tech policy`
 
 ---
 
 <a id="item-2"></a>
-## [State Council Forms Investigation Team for Guangxi Dam Collapse](https://www.yicai.com/brief/103290754.html) ⭐️ 8.0/10
-
-On July 24, 2026, the State Council established a cross-ministerial investigation and assessment team for the &quot;7·6&quot; dam collapse at Liulan Reservoir in Hengzhou, Guangxi, and held its first plenary meeting in Nanning. This high-level investigation, involving 14 ministries and agencies, underscores the severity of the disaster and the government&\#x27;s commitment to infrastructure safety and accountability, with implications for dam safety regulations nationwide. The investigation is led by the Ministry of Emergency Management, with participation from ministries including Natural Resources, Housing and Urban-Rural Development, Water Resources, and others. The dam collapse on July 6 caused significant casualties.
-
-rss · 第一财经 - 快讯 · Jul 24, 04:01
-
-**Background**: Liulan Reservoir is an earth-rock dam in Hengzhou, Guangxi. Earth-rock dams are prone to seepage failure, especially under extreme rainfall. The collapse occurred during the flood season, with heavy rain likely overwhelming the dam&\#x27;s capacity.
-
-<details><summary>References</summary>
-<ul>
-<li><a href="https://www.mem.gov.cn/xw/bndt/202607/t20260724_677867.shtml">国务院成立广西南宁横州市六蓝水库“7·6”溃坝灾害调查评估组--中华人民...</a></li>
-<li><a href="https://www.news.cn/politics/20260724/40f4af23bed447ea983492c7a6443df2/c.html">国务院成立广西南宁横州市六蓝水库“7·6”溃坝灾害调查评估组</a></li>
-<li><a href="https://www.163.com/dy/article/L18PO3LS0556O7SY.html">163.com/dy/article/L18PO3LS0556O7SY.html</a></li>
-
-</ul>
-</details>
-
-**Tags**: `#溃坝灾害`, `#基础设施安全`, `#应急管理`, `#国务院调查`, `#水利工程`
-
----
-
-<a id="item-3"></a>
 ## [Visa and Lianlian Complete First B2B AI Agent Transaction in Greater China](https://wallstreetcn.com/articles/3777848) ⭐️ 8.0/10
 
-Visa and Lianlian Digital announced on July 24 that they have completed the first disclosed B2B AI agent transaction in Greater China, executed by Lianlian&\#x27;s AI agent LoopXPay. The agent handled the entire workflow from supplier sourcing to payment within preset enterprise controls. This marks a significant step in integrating AI agents into the payment closure loop for B2B transactions, potentially automating procurement and payment processes. Visa&\#x27;s introduction of the Trusted Agent Protocol and Agentic Directory addresses critical issues of identity, authorization, and oversight for AI agents in payments. The transaction served a small business seller, with LoopXPay completing supplier sourcing, comparison, ordering, and payment within a single workflow. LoopXPay has been registered in Visa&\#x27;s Agentic Directory, which works with the Trusted Agent Protocol to provide identity verification and spending controls for AI agents.
+Visa and Lianlian Digital announced the completion of the first publicly disclosed B2B AI agent transaction in Greater China, executed by Lianlian&\#x27;s AI agent LoopXPay. The agent handled supplier sourcing, comparison, ordering, and payment within preset spending controls. This marks a practical step toward integrating AI agents into enterprise procurement and payment workflows, potentially automating routine B2B purchases. It also demonstrates Visa&\#x27;s Trusted Agent Protocol and Agentic Directory in a real transaction, addressing identity and authorization challenges for agent-initiated payments. LoopXPay has been registered in Visa&\#x27;s Agentic Directory, which helps merchants identify verified AI agents. The transaction served a small business seller, but specific details such as amount, product category, and payment method were not disclosed, making it unclear how automated the process was.
 
 rss · 华尔街见闻 - 全球快讯 · Jul 24, 04:40
 
-**Background**: AI agents are software entities that can autonomously perform tasks on behalf of users or enterprises. In B2B payments, agents have been used mainly in customer service and marketing, but now they are gaining the ability to execute orders and move funds. Visa&\#x27;s Trusted Agent Protocol establishes cryptographic standards for agent identity verification, while the Agentic Directory lists verified agents and merchants.
+**Background**: AI agents are software programs that can autonomously perform tasks like searching, comparing, and purchasing. In B2B commerce, integrating AI agents with payment systems raises new questions about identity, authorization, and accountability. Visa&\#x27;s Trusted Agent Protocol provides a cryptographic method for agents to prove their identity to merchants, while the Agentic Directory acts as a registry of verified agents.
 
 <details><summary>References</summary>
 <ul>
-<li><a href="https://developer.visa.com/capabilities/trusted-agent-protocol/docs">Getting Started - Trusted Agent Protocol - developer.visa.com</a></li>
-<li><a href="https://developer.visa.com/capabilities/trusted-agent-protocol/overview">Trusted Agent Protocol - developer.visa.com</a></li>
 <li><a href="https://corporate.visa.com/en/solutions/acceptance/agentic-commerce.html">Agentic commerce | Visa</a></li>
+<li><a href="https://www.visa.com/en-us/solutions/intelligent-commerce">Enabling AI agents to buy securely and seamlessly | Visa</a></li>
 
 </ul>
 </details>
@@ -92,263 +69,285 @@ rss · 华尔街见闻 - 全球快讯 · Jul 24, 04:40
 
 ---
 
-<a id="item-4"></a>
+<a id="item-3"></a>
 ## [DeepSeek: China&\#x27;s AI Gap Is Compute, Not Ecosystem](https://wallstreetcn.com/member/articles/3777844) ⭐️ 8.0/10
 
-DeepSeek argues that the primary gap between Chinese and US AI is compute resources, not talent or ecosystem, and that domestic GPU supply constraints will become the binding bottleneck. This challenges the common narrative that efficiency improvements can substitute for scale, and highlights that China&\#x27;s AI progress will depend on overcoming hardware supply constraints rather than software ecosystem issues. DeepSeek&\#x27;s founder Liang Wenfeng still believes in scaling laws, but notes that China hasn&\#x27;t yet had enough compute to test scaling limits. The company&\#x27;s efficiency gains were resource-constrained, not a rejection of scaling.
+DeepSeek&\#x27;s founder Liang Wenfeng argues that the primary gap between Chinese and US AI is compute resources, not talent or ecosystem, and that domestic GPUs are becoming usable but face production capacity shortages. This challenges the common narrative that China&\#x27;s AI lags due to software ecosystem incompatibility, redirecting focus to hardware production scaling. It implies that easing chip export restrictions or boosting domestic fab capacity could accelerate China&\#x27;s AI progress. DeepSeek achieved competitive models with only one-tenth the compute of comparable US models, yet still faces compute shortages for extensive experimentation. Liang believes scaling laws remain valid for China, but the country lacks the compute to fully explore them.
 
 rss · 华尔街见闻 - 全球快讯 · Jul 24, 03:43
 
-**Background**: DeepSeek is a Chinese AI company known for developing efficient large language models like DeepSeek-V3. The US-China AI race has intensified amid export controls on advanced GPUs to China, making domestic GPU supply a critical issue.
+**Background**: DeepSeek is a Chinese AI company known for its cost-efficient open-weight models like DeepSeek-R1. The US has imposed export restrictions on advanced AI chips to China, limiting access to high-end GPUs. Chinese GPU makers like Huawei, Cambricon, and Biren are developing alternatives, but their ecosystems and production volumes are still maturing.
 
 <details><summary>References</summary>
 <ul>
-<li><a href="https://en.wikipedia.org/wiki/DeepSeek">DeepSeek - Wikipedia</a></li>
-<li><a href="https://www.huxiu.com/article/4869233.html">中美AI对弈之下的算力难题 - 虎嗅网</a></li>
-<li><a href="https://www.stcn.com/article/detail/1328444.html">扩张与洗牌并存 国产GPU厂商发力AI生态</a></li>
+<li><a href="https://en.wikipedia.org/wiki/DeepSeek">DeepSeek</a></li>
+<li><a href="https://k.sina.com.cn/article_7879849031_1d5acf44706801ntca.html?from=tech">中美AI差距真只在算力资源吗？|梁文锋|开源模型|DeepSeek|梁文|模型_新浪新闻</a></li>
+<li><a href="https://blog.csdn.net/AladdinEdu/article/details/147357826">国产GPU生态现状评估：从寒武纪到壁仞的编程适配挑战</a></li>
 
 </ul>
 </details>
 
-**Tags**: `#AI`, `#compute`, `#China`, `#GPU`, `#scaling`
+**Tags**: `#AI`, `#compute`, `#GPU`, `#China`, `#DeepSeek`
+
+---
+
+<a id="item-4"></a>
+## [Alphabet Q2 Earnings: Cloud Growth, Capex Surge, TPU Accounting, SpaceX Lease](https://wallstreetcn.com/articles/3777835) ⭐️ 8.0/10
+
+Alphabet&\#x27;s Q2 earnings revealed Google Cloud revenue growing 82% YoY, capital expenditure guidance raised to $205 billion for 2026, and a $920 million per month compute lease with SpaceX. Morgan Stanley cut the price target to $400 but maintained an overweight rating. This earnings report provides key signals on the return on generative AI investments, with Google Cloud&\#x27;s growth and margins serving as a benchmark for the industry. The massive capex increase and TPU accounting details offer insights into Alphabet&\#x27;s AI infrastructure strategy and its impact on future earnings. Google Cloud&\#x27;s backlog reached $514 billion, with an EBIT margin of 36%. Alphabet raised 2026 capex to $195-205 billion, driven by capacity acceleration rather than cost inflation. The SpaceX lease is priced at ~$50 per watt, serving a &\#x27;hyperscale cloud customer&\#x27; likely related to Apple&\#x27;s Gemini-powered Siri.
+
+rss · 华尔街见闻 - 全球快讯 · Jul 24, 01:31
+
+**Background**: Alphabet \(Google&\#x27;s parent\) is heavily investing in AI infrastructure, including custom TPU chips and data centers. TPU \(Tensor Processing Unit\) is Google&\#x27;s custom AI accelerator, and its accounting treatment affects reported revenue and margins. The SpaceX lease reflects Alphabet&\#x27;s need for immediate compute capacity while building its own.
+
+<details><summary>References</summary>
+<ul>
+<li><a href="https://www.cnbc.com/2026/06/05/google-to-pay-spacex-920-million-a-month-for-xai-compute-capacity.html">Google to pay SpaceX $920 million a month for compute ...</a></li>
+<li><a href="https://www.binance.com/en/square/hashtag/alphabetraises2026capexto$195to$205b">#alphabetraises 2026 capexto$195to... | Binance Square</a></li>
+<li><a href="https://247wallst.com/investing/2026/04/07/broadcoms-long-term-google-tpu-deal-is-bigger-than-it-looks-for-ai-infrastructure/">Broadcom&#x27;s Long-Term Google TPU Deal Is Bigger Than It Looks ...</a></li>
+
+</ul>
+</details>
+
+**Tags**: `#Alphabet`, `#Google Cloud`, `#AI infrastructure`, `#capital expenditure`, `#earnings analysis`
 
 ---
 
 <a id="item-5"></a>
-## [Alphabet Q2: Cloud Growth, Capex Surge, TPU Accounting, SpaceX Lease](https://wallstreetcn.com/articles/3777835) ⭐️ 8.0/10
+## [AI Infrastructure Financing: $3.5 Trillion Funding Gap](https://wallstreetcn.com/articles/3777832) ⭐️ 8.0/10
 
-Alphabet&\#x27;s Q2 earnings revealed Google Cloud revenue growing 82% year-over-year, with EBIT margin reaching 36% and incremental margin at 54%. The company raised its 2026 capex cap by $15 billion to $205 billion, and Morgan Stanley projects capex could reach $375 billion by 2027. This earnings report provides key signals on the return on generative AI investments, as Google Cloud&\#x27;s growth and margins serve as a benchmark for the industry. The massive capex plans and TPU accounting details offer insights into Alphabet&\#x27;s AI infrastructure strategy and its impact on future earnings. Alphabet&\#x27;s cloud backlog reached $514 billion, up $52 billion quarter-over-quarter. The company&\#x27;s TPU accounting involves purchasing TPUs as system components, holding them as inventory, and recognizing revenue upon external sale through Google Cloud, with an estimated 3.5 GW of TPU sales expected in 2027 and 4 GW in 2028.
+CICC estimates that AI capital expenditure will create about $3.5 trillion in external financing needs over the next five years, with investment-grade bonds and private capital as the main sources. The report also analyzes the conditions for debt repayment, requiring AI applications to generate approximately $1 trillion in sustainable annual revenue by 2030. This analysis highlights a critical shift from internal cash flow to external debt financing for AI infrastructure, which could reshape capital markets and credit risk. The findings are crucial for investors, financial institutions, and tech companies assessing the sustainability of the AI investment cycle. The report assumes a 10% ROIC and a 50% mature-stage EBITDA margin with a 5-year asset life for positive returns. It warns that if margins fall below 20%, capital costs may not be covered even with longer asset lives.
 
-rss · 华尔街见闻 - 全球快讯 · Jul 24, 01:31
+rss · 华尔街见闻 - 全球快讯 · Jul 24, 00:49
 
-**Background**: Google Cloud is a major cloud computing platform competing with AWS and Azure. TPU \(Tensor Processing Unit\) is Google&\#x27;s custom AI accelerator chip. Capital expenditure \(capex\) refers to spending on physical assets like data centers and hardware. The SpaceX lease involves Alphabet renting GPU capacity from SpaceX to meet short-term AI compute demand.
+**Background**: AI infrastructure investment has surged, with major cloud vendors&\#x27; capex-to-revenue ratio rising from 12% in 2023 to an expected 40%+ by 2027. This rapid expansion is outpacing internal cash flows, necessitating external financing. The report is the first in a series tracking AI financing, addressing how the financial system will absorb the funding needs and the associated risks.
 
 <details><summary>References</summary>
 <ul>
-<li><a href="https://www.163.com/dy/article/L2JGC49B05198NMR.html">谷歌财报的四个焦点：云利润率、资本开支增长逻辑、TPU会计处理、Spac...</a></li>
-<li><a href="https://news.qq.com/rain/a/20260606A03H5300">合计700亿美元！SpaceX先后与Anthropic和谷歌签下大单，“算力租赁”ARR...</a></li>
-<li><a href="https://m.21jingji.com/article/20260723/herald/012a88dcda5557227022b07b7953226c.html">AI重投入迎来考验期： 谷 歌 云 业务狂奔，现金流首度转负 - 21财经</a></li>
+<li><a href="http://hkstock.cnfol.com/shichangfenxi/20260724/32316480.shtml">中金：AI资本开支催生3.5万亿美元融资需求 债务偿还能力成关键考验_市场分析_港股_中金在线</a></li>
+<li><a href="https://caifuhao.eastmoney.com/news/20260624174502921624350">AI资本开支继续上修：科技股没到顶，但“闭眼买科技”的时代要结束了？原创Fire_财富号_东方财富网</a></li>
+<li><a href="https://www.huxiu.com/article/4868913.html">AI资本开支逼近7000亿美元，应用层收入缺口持续扩大</a></li>
 
 </ul>
 </details>
 
-**Tags**: `#Alphabet`, `#cloud computing`, `#AI investment`, `#capital expenditure`, `#earnings analysis`
+**Tags**: `#AI`, `#finance`, `#infrastructure`, `#capital expenditure`, `#debt financing`
 
 ---
 
 <a id="item-6"></a>
-## [AI&\#x27;s Financial Moment: $3.5 Trillion Financing Gap](https://wallstreetcn.com/articles/3777832) ⭐️ 8.0/10
+## [Tencent to Deploy NPO Supernodes by 2026Q4](https://wallstreetcn.com/member/articles/3777640) ⭐️ 8.0/10
 
-CICC projects that AI capital expenditure will create a $3.5 trillion external financing gap over the next five years, shifting from internal cash flows to debt and equity markets. The report details how investment-grade bonds and private capital will absorb most of this demand. This analysis highlights a critical inflection point where AI infrastructure investment outpaces the cash flow generation of major cloud firms, potentially reshaping financial markets and credit risk. The findings are essential for investors, policymakers, and financial institutions assessing the sustainability of the AI boom. The report assumes $5.6 trillion in total AI capex from 2026-2030, with $3.5 trillion needing external financing. It estimates that AI applications must generate ~$1 trillion in annual sustainable revenue by 2030 to service debt, requiring nearly double-digit annual growth.
+Tencent announced plans to deploy Near-Package Optics \(NPO\) supernodes by the fourth quarter of 2026, marking a shift from research to engineering deployment for NPO technology in domestic AI compute clusters. This deployment signals that NPO is emerging as a practical near-term alternative to Co-Packaged Optics \(CPO\) for scaling AI compute clusters, addressing the interconnect bottleneck for domestic AI chips while balancing performance, cost, and maintainability. NPO moves the optical engine close to the switch ASIC on the same board, reducing electrical interconnect distance from ~300 mm to ~150 mm, while retaining the ability to independently replace optical engines—a key advantage over CPO.
 
-rss · 华尔街见闻 - 全球快讯 · Jul 24, 00:49
+rss · 华尔街见闻 - 全球快讯 · Jul 24, 00:45
 
-**Background**: Major cloud providers like Microsoft, Amazon, and Google have historically funded capex from operating cash flows, but AI-driven spending has pushed capex-to-revenue ratios above 40%, exceeding past tech and energy cycles. External financing, including bonds and private credit, is now essential to bridge the gap.
+**Background**: In traditional pluggable optical modules, high-speed electrical signals travel long PCB traces before optical conversion, causing signal loss and high power consumption. NPO and CPO are two approaches to reduce this distance: NPO places the optical engine near the ASIC on the board, while CPO integrates optics directly into the ASIC package. CPO offers even shorter distances but introduces challenges in yield, thermal management, and repairability. Tencent&\#x27;s choice of NPO reflects a pragmatic balance for near-term deployment.
 
 <details><summary>References</summary>
 <ul>
-<li><a href="https://www.bis.org/publ/bisbull120.pdf">Financing the AI boom: from cash flows to debt</a></li>
-<li><a href="https://fredblog.stlouisfed.org/2026/05/rising-capital-expenditures-and-declining-cash-holdings-during-the-ai-boom/">Rising capital expenditures and declining cash holdings ...</a></li>
-<li><a href="https://business.columbia.edu/sites/default/files-efs/imce-uploads/svannieuwerburgh/papers/FinancingAIBuildout_03192026.pdf">Financing the AI Buildout - business.columbia.edu</a></li>
+<li><a href="https://resources.l-p.com/glossary/what-is-near-packaged-optics-benefits-network-upgrades">Beyond Pluggables: What is NPO (Near-Packaged Optics) and Why ...</a></li>
+<li><a href="https://www.naddod.com/blog/optical-interconnect-technology-analysis-lpo-npo-cpo">Optical Interconnect Technology Analysis: LPO, NPO, CPO</a></li>
+<li><a href="https://credosemi.com/blogs/near-package-optics/">Near-Package Optics: Evolution of Optical Connectivity - Credo</a></li>
 
 </ul>
 </details>
 
-**Tags**: `#AI`, `#finance`, `#capital expenditure`, `#debt financing`, `#infrastructure`
+**Tags**: `#NPO`, `#CPO`, `#AI infrastructure`, `#optical interconnect`, `#Tencent`
 
 ---
 
 <a id="item-7"></a>
-## [China cracks 170+ AI rumor cases in H1 2025](https://www.yicai.com/brief/103290648.html) ⭐️ 7.0/10
+## [State Council Investigates Guangxi Dam Collapse Disaster](https://www.yicai.com/brief/103290754.html) ⭐️ 7.0/10
 
-China&\#x27;s Ministry of Public Security announced on July 24, 2025, that it investigated over 170 cases of AI-generated online rumors in the first half of 2025, penalizing more than 190 individuals. The ministry also detailed a multi-pronged strategy including AI-powered early warning, mandatory content labeling, and legal framework development. This marks the first official release of nationwide enforcement data specifically targeting AI-generated misinformation, signaling China&\#x27;s intensified regulatory push as AI tools become more accessible. The measures could set a precedent for how governments globally combat AI-powered cybercrime and protect public trust. The National Anti-Fraud Center app now includes an AI content detection feature that allows users to upload suspicious media for AI-generated content identification. Additionally, the Ministry jointly issued the &\#x27;Measures for Labeling AI-Generated Synthetic Content&\#x27; with other agencies, requiring clear labeling of AI-produced material.
+On July 24, the State Council established an investigation and assessment team for the &quot;7·6&quot; dam collapse at Liulan Reservoir in Hengzhou, Guangxi, and held its first plenary meeting. The disaster, which occurred on July 6, caused significant casualties. This national-level investigation underscores the severity of the dam failure and the government&\#x27;s commitment to accountability and infrastructure safety. The findings could lead to stricter dam safety regulations and emergency response reforms across China. The investigation team is led by the Ministry of Emergency Management and includes multiple ministries such as Natural Resources, Housing and Urban-Rural Development, Water Resources, and others. Preliminary reports suggest heavy rainfall caused water to overtop the dam, leading to seepage failure in the earth-rock dam.
 
-rss · 第一财经 - 快讯 · Jul 24, 02:55
+rss · 第一财经 - 快讯 · Jul 24, 04:01
 
-**Background**: AI-generated content, including deepfakes and synthetic media, has been increasingly used for fraud, impersonation, and spreading rumors. China has been building a legal and technical framework to address these risks, including the upcoming &\#x27;Cybercrime Prevention Law&\#x27; and AI security review systems.
+**Background**: Liulan Reservoir is a medium-sized earth-rock dam in Hengzhou, Guangxi. Earth-rock dams are prone to seepage failure when water levels rise rapidly. The &quot;7·6&quot; disaster is one of the deadliest dam failures in recent Chinese history, prompting a high-level investigation.
 
 <details><summary>References</summary>
 <ul>
-<li><a href="https://t.cj.sina.com.cn/articles/view/5787187353/v158f178990200244ki">“以AI治AI”！ 国 家 反 诈 中 心 APP上线AI 内 容 鉴 定 功 能</a></li>
-<li><a href="https://politics.gmw.cn/2025-03/15/content_37907844.htm">politics.gmw.cn/2025-03/15/content_37907844.htm</a></li>
+<li><a href="https://www.secretchina.com/news/gb/2026/07/22/1102367.html">六 蓝 水 库 站长还 原 溃 坝 前24小时真相 报导遭全网下架(图) - 大陆时政 -</a></li>
+<li><a href="https://www.163.com/dy/article/L18PO3LS0556O7SY.html">163.com/dy/article/L18PO3LS0556O7SY.html</a></li>
 
 </ul>
 </details>
 
-**Tags**: `#AI safety`, `#cybercrime`, `#regulation`, `#China`, `#misinformation`
+**Discussion**: Online discussions express grief over the casualties and frustration over alleged censorship of early warnings. Some netizens question the adequacy of maintenance and emergency preparedness, while others call for transparent investigation results.
+
+**Tags**: `#disaster`, `#infrastructure`, `#government`, `#safety`
 
 ---
 
 <a id="item-8"></a>
-## [Tencent Merges LLM and Multimodal Teams into Foundational Model Unit](https://wallstreetcn.com/livenews/3139265) ⭐️ 7.0/10
+## [China&\#x27;s Public Security Ministry Handles 170+ AI Rumor Cases in H1](https://www.yicai.com/brief/103290648.html) ⭐️ 7.0/10
 
-Tencent announced the merger of its Hunyuan multimodal model department and large language model department into a single foundational model unit, led by chief AI scientist Yao Shunyu, to accelerate model R&amp;D and improve collaboration. This restructuring signals Tencent&\#x27;s strategic focus on foundational model research, aiming to push the boundaries of omni-modal intelligence. It could lead to more integrated AI capabilities across text, image, video, and audio, benefiting Tencent&\#x27;s vast product ecosystem. The new foundational model unit is led by Yao Shunyu, Tencent&\#x27;s chief AI scientist. The merger aims to explore the upper limits of omni-modal intelligence, which natively supports multiple input and output modalities.
+China&\#x27;s Ministry of Public Security announced that in the first half of 2025, it investigated and handled over 170 cases of online rumors generated using AI tools, and took legal action against more than 190 individuals. This marks the first official release of nationwide statistics on AI-generated cybercrime, signaling China&\#x27;s intensified regulatory push to combat AI misuse and protect social stability. The ministry outlined a four-pronged approach: crackdown on AI crimes, smart early warning via the National Anti-Fraud Center app&\#x27;s AI content detection feature, multi-departmental regulation including the new Content Labeling Method, and legal framework development such as the Cybercrime Prevention Law.
 
-rss · 华尔街见闻 - 全球快讯 · Jul 24, 06:17
+rss · 第一财经 - 快讯 · Jul 24, 02:55
 
-**Background**: Tencent&\#x27;s Hunyuan model family includes both large language models and multimodal models for image and video generation. Omni-modal models represent a new paradigm that unifies text, image, audio, and video in a single architecture, enabling deeper cross-modal understanding.
+**Background**: AI-generated content, including deepfakes and synthetic media, has been increasingly used for fraud, rumor-mongering, and identity theft. In response, Chinese authorities have been developing regulations and technical tools to detect and label AI-generated content, such as the mandatory content labeling rules issued in March 2025.
 
 <details><summary>References</summary>
 <ul>
-<li><a href="https://wangjunjian.com/posts/2025-06-08-baai-tencent-hunyuan-multi-modal-generative-model/">腾讯 混 元 多 模 态 生成 模 型 | 军舰的日志</a></li>
-<li><a href="https://tidenews.com.cn/short_news.html?id=6979aa717d2e05000115b8fc">全 模 态 模 型 （Omni-Modal Mod</a></li>
+<li><a href="https://www.ithome.com/0/981/044.htm">公安部：上半年共侦办利用 AI 工具生成网络谣言案件 170 余起公安部：...</a></li>
+<li><a href="https://www.cac.gov.cn/2025-03/14/c_1743654684782215.htm">关于印发《人工智能生成合成内容标识办法》的通知_中央网络安全和信息...</a></li>
+<li><a href="https://www.shszx.gov.cn/shzx/wyxl/content/cbfdf77b-8387-4031-9e17-0b073fb70893.html">AI 内 容 鉴 定 ：给信息世界配上“数字照妖镜”</a></li>
 
 </ul>
 </details>
 
-**Tags**: `#Tencent`, `#AI`, `#LLM`, `#multimodal`, `#organizational change`
+**Tags**: `#AI safety`, `#cybercrime`, `#regulation`, `#China`, `#deepfake`
 
 ---
 
 <a id="item-9"></a>
-## [Morgan Stanley Warns AI Memory Boom Nears Peak, Prices to Top in Q4 2026](https://wallstreetcn.com/articles/3777849) ⭐️ 7.0/10
+## [Tencent Merges LLM and Multimodal Teams](https://wallstreetcn.com/livenews/3139265) ⭐️ 7.0/10
 
-Morgan Stanley released a report on July 21, 2026, warning that the AI-driven memory storage boom is approaching a peak, with DRAM and NAND contract prices expected to top out in Q4 2026. The report highlights that net earnings upgrade momentum has fallen from 92% to 77%, and inventory levels for DRAM and NAND have risen in Q2 2026. This analysis from a major financial institution signals a potential inflection point in the semiconductor memory cycle, which could impact investment strategies for tech professionals and investors. The shift from profit growth to profit sustainability concerns may lead to valuation corrections for key players like SK Hynix and Samsung. The report notes that SK Hynix&\#x27;s P/B ratio has fallen to 2.5x and Samsung&\#x27;s to 1.7x, still above long-term averages but reflecting market repricing. HBM supply remains tight, but commodity DRAM faces pressure from new supply, and long-term supply agreements \(LTAs\) have not led to a structural valuation re-rating.
+On July 23, 2025, Tencent announced the merger of its Hunyuan multimodal model department and large language model department into a single foundational model unit, led by chief AI scientist Shunyu Yao. This restructuring signals Tencent&\#x27;s strategic push to unify research efforts and accelerate the development of omni-modal models, potentially leading to more advanced AI capabilities that integrate text, image, audio, and video seamlessly. The new foundational model unit is placed under Shunyu Yao, who previously led the LLM department since December 2024. The move aims to improve research efficiency and explore the upper limits of omni-modal intelligence.
 
-rss · 华尔街见闻 - 全球快讯 · Jul 24, 05:55
+rss · 华尔街见闻 - 全球快讯 · Jul 24, 06:17
 
-**Background**: Memory chip prices have surged in 2025-2026 driven by AI demand for HBM and server DRAM, leading to a super-cycle. However, the cycle is now showing signs of peaking as inventory builds and earnings upgrade momentum slows. Morgan Stanley&\#x27;s report provides a detailed analysis of the signals indicating a potential downturn.
+**Background**: Tencent Hunyuan is a large language model with over a hundred billion parameters, trained on more than 2 trillion tokens. Omni-modal models go beyond traditional multimodal models by deeply integrating multiple data types such as text, images, audio, and video for unified understanding and generation.
 
 <details><summary>References</summary>
 <ul>
-<li><a href="https://www.morganstanley.com/">Morgan Stanley | Global Leader in Financial Services</a></li>
-<li><a href="https://www.dramexchange.com/">DRAMeXchange - World leading DRAM and NAND Flash market...</a></li>
-<li><a href="https://www.trendforce.com/research/download/RP131220HJ">DRAM Monthly Datasheet Jul. 2026 | TrendForce</a></li>
+<li><a href="https://blog.csdn.net/Trb201013/article/details/157029727">一文读懂全模态模型 (Omni Model)：超越多模态的大模型新方向</a></li>
 
 </ul>
 </details>
 
-**Tags**: `#AI`, `#semiconductors`, `#memory`, `#storage`, `#market analysis`
+**Tags**: `#Tencent`, `#LLM`, `#multimodal`, `#organizational restructuring`, `#AI research`
 
 ---
 
 <a id="item-10"></a>
-## [US vs China AI Models: Two Paths, 2027 Decisive?](https://wallstreetcn.com/member/articles/3777669) ⭐️ 7.0/10
+## [Morgan Stanley Warns AI Memory Boom Nears Peak](https://wallstreetcn.com/articles/3777849) ⭐️ 7.0/10
 
-A comparative analysis outlines two distinct AI business models: the US closed-source, enterprise-subscription approach and China&\#x27;s open-source, low-cost inference strategy, predicting a decisive turning point by 2027. This comparison highlights how differing AI strategies could shape global tech leadership and economic impact, with implications for enterprises, investors, and policymakers worldwide. By 2026, OpenAI&\#x27;s annualized revenue is projected at $25-30 billion and Anthropic&\#x27;s at $47 billion, while China&\#x27;s AI firms collectively generate about $10 billion in 2025 but grow faster and cover more scenarios.
+Morgan Stanley released a report warning that the AI-driven memory storage boom is nearing a peak, with DRAM and NAND contract prices expected to top out in Q4 2026. The report notes that net earnings revision ratio has fallen from 92% to 77%, and inventory levels have risen in Q2. This analysis provides a contrarian view to the prevailing AI optimism, signaling that memory stocks may face valuation pressure even as fundamentals remain healthy. Investors and tech professionals should monitor the shift from earnings growth to earnings sustainability. SK Hynix&\#x27;s P/B ratio has fallen to 2.5x and Samsung&\#x27;s to 1.7x, both above long-term averages but down from recent highs. The report identifies three signals: declining price YoY growth, rising inventory, and weakening earnings momentum.
 
-rss · 华尔街见闻 - 全球快讯 · Jul 24, 05:35
+rss · 华尔街见闻 - 全球快讯 · Jul 24, 05:55
 
-**Background**: The US AI model relies on private capital and monetizes through API calls and enterprise subscriptions \(e.g., Copilot, Agent\), aiming to replace high-cost white-collar labor. China&\#x27;s model is driven by policy and industrial capital, using open-source models and low-cost inference to boost manufacturing efficiency and digital consumption.
+**Background**: DRAM and NAND flash are two main types of memory used in computers and devices. DRAM is volatile memory used for system RAM, while NAND is non-volatile storage used in SSDs and memory cards. The memory industry is cyclical, with prices fluctuating based on supply and demand, often driven by data center and AI demand.
 
 <details><summary>References</summary>
 <ul>
-<li><a href="https://www.toutiao.com/article/7650330213754225190/">AI 大模型终极对决！开源 VS 闭源2026 年行业格局盈利逻辑与未来走向</a></li>
-<li><a href="https://blog.51cto.com/u_17465092/14600319">开源 vs 闭源：2026 年大模型生态格局与商业化路径_wx686cfeddc81db的...</a></li>
-<li><a href="https://www.odaily.news/zh-CN/post/5209478">我们都担心被 AI 替 代 ，但 Citrini 的末日推演漏掉了什么？ - Odaily</a></li>
+<li><a href="https://en.theblockbeats.news/flash/357124">Morgan Stanley : Memory Shortage Worsens, DRAM Prices to...</a></li>
+<li><a href="https://www.flowverify.co/blog/ai-memory-shortage-cloud-cost-playbook">AI Memory Shortage Is Rewriting Cloud Cost Rules | FlowVerify</a></li>
 
 </ul>
 </details>
 
-**Tags**: `#AI`, `#business models`, `#US vs China`, `#open source`, `#enterprise AI`
+**Tags**: `#AI`, `#semiconductor`, `#memory`, `#market analysis`, `#Morgan Stanley`
 
 ---
 
 <a id="item-11"></a>
-## [Asian Tech Stocks Plunge on AI Spending Doubts and Oil Surge](https://wallstreetcn.com/articles/3777833) ⭐️ 7.0/10
+## [US vs China AI Models: 2027 as the Decisive Inflection Point](https://wallstreetcn.com/member/articles/3777669) ⭐️ 7.0/10
 
-Asian markets experienced a sharp selloff on Thursday, with South Korea&\#x27;s KOSPI falling over 6% and SK Hynix and Samsung Electronics dropping more than 7%, as Brent crude oil breached $100 per barrel. The Korea Exchange activated a sidecar mechanism on KOSDAQ to temporarily halt program sell orders. This selloff highlights growing investor skepticism about the returns on massive AI capital expenditures, which could lead to a broader tech valuation correction. Combined with surging oil prices and renewed inflation fears, the market is repricing expectations for interest rate paths, potentially delaying or reversing rate cuts. The &\#x27;Magnificent Seven&\#x27; tech stocks lost a combined $797 billion in market value, with Alphabet falling 7.1% after raising capital expenditure guidance. Brent crude surged 38% this month due to Houthi attacks on Red Sea tankers and threats of expanded U.S. strikes on Iran, while the market now fully prices in a Fed rate hike by September.
+A new analysis compares the US closed-source, enterprise-subscription AI model with China&\#x27;s open-source, low-cost inference approach, predicting a decisive inflection point in 2027. The US model targets replacing high-cost white-collar labor, while China focuses on manufacturing efficiency and digital consumption. This comparison highlights two fundamentally different AI business models that could shape the global AI ecosystem. Understanding these trajectories is crucial for investors, policymakers, and companies deciding where to place their bets. The US model is driven by private capital and monetizes through API calls and enterprise subscriptions \(Copilot, Agent\), with OpenAI projected to reach $25-30B ARR by 2026. China&\#x27;s model, driven by policy and industrial capital, uses open-source models and low-cost inference, with total AI revenue around $10B in 2025 but growing faster.
 
-rss · 华尔街见闻 - 全球快讯 · Jul 24, 05:26
+rss · 华尔街见闻 - 全球快讯 · Jul 24, 05:35
 
-**Background**: The &\#x27;Magnificent Seven&\#x27; refers to Apple, Microsoft, Amazon, Alphabet, Tesla, Nvidia, and Meta Platforms, which have driven much of the market&\#x27;s recent gains. The sidecar mechanism on KOSDAQ is an automated trading halt that pauses program sell orders for five minutes when the KOSDAQ 150 index falls sharply, aimed at curbing excessive volatility.
+**Background**: The US AI industry relies on closed-source flagship models as core assets, targeting high-value white-collar jobs. In contrast, China&\#x27;s AI strategy emphasizes open-source adoption and low-cost inference to penetrate manufacturing and digital consumption sectors. The analysis suggests that by 2027, the two paths will reach a critical juncture where their relative success becomes clear.
 
 <details><summary>References</summary>
 <ul>
-<li><a href="https://cryptobriefing.com/korea-exchange-sidecar-kosdaq-volatility/">Korea Exchange activates sidecar on KOSDAQ amid market volatility</a></li>
-<li><a href="https://www.investopedia.com/magnificent-seven-stocks-8402262">Magnificent 7 Stocks: What You Need to Know - Investopedia Full list of Magnificent 7 Stocks - Updated Daily Magnificent 7 Stocks: What Are They and How They Dominate the ... Top Stories What Are The Magnificent 7 Stocks? - Investing.com What are the Magnificent 7 stocks? - Fidelity Magnificent 7 Stocks: What They Are and How to Invest | The ...</a></li>
+<li><a href="https://ernie-image.app/blog/ei-047-ernie-image-vs-gpt-image-1-5-open-source-vs-closed-cn-20260521">ERNIE-Image vs GPT Image 1.5： 开 源 免费 vs 闭 源 旗 舰 ，AI...</a></li>
+<li><a href="https://blog.csdn.net/M15219285876/article/details/162961403">微软 AI 演进：从 Copilot 到企业 Agent 规模化落地全链路实践指南-CS...</a></li>
 
 </ul>
 </details>
 
-**Tags**: `#AI investment`, `#stock market`, `#geopolitics`, `#oil prices`, `#tech selloff`
+**Tags**: `#AI`, `#business models`, `#US vs China`, `#open source`, `#industry analysis`
 
 ---
 
 <a id="item-12"></a>
-## [Singapore&\#x27;s GIC: Chinese AI to Lower Global Costs, Boost Adoption](https://wallstreetcn.com/articles/3777845) ⭐️ 7.0/10
+## [Tech Stocks Plunge on AI Spending Doubts, Oil Surges Above $100](https://wallstreetcn.com/articles/3777833) ⭐️ 7.0/10
 
-Singapore sovereign wealth fund GIC predicts that Chinese AI models like DeepSeek and Kimi will significantly reduce global AI costs, accelerating enterprise adoption. GIC has invested billions in AI, including leading Anthropic&\#x27;s $30 billion funding round in February. This insight from a major global investor suggests that the rise of low-cost Chinese open-source models could challenge the high valuations of US AI leaders like OpenAI and Anthropic, potentially reshaping the AI industry&\#x27;s competitive landscape. GIC&\#x27;s Chief Investment Officer Bryan Yeo noted that use cases for AI will grow exponentially as costs drop. However, GIC remains cautious about investing in Chinese AI startups, requiring stricter scrutiny of their R&amp;D capabilities and model iteration speed.
+Asia-Pacific tech stocks suffered a sharp sell-off on Thursday, with South Korea&\#x27;s SK Hynix and Samsung Electronics both dropping over 7% and the KOSDAQ index triggering a sidecar halt. Brent crude oil surged above $100 per barrel, driven by Middle East tensions and Houthi attacks on Red Sea tankers. This market turmoil reflects growing skepticism about whether massive AI capital expenditures will yield returns, combined with renewed inflation fears from rising oil prices. The dual pressures are reshaping interest rate expectations and could lead to further volatility in global tech stocks and energy markets. The KOSDAQ sidecar mechanism temporarily halted program sell orders for five minutes after the index fell sharply. Brent crude has risen 38% this month, and the market now fully prices in a Fed rate hike in September, with the 10-year U.S. Treasury yield at 4.71%.
 
-rss · 华尔街见闻 - 全球快讯 · Jul 24, 03:43
+rss · 华尔街见闻 - 全球快讯 · Jul 24, 05:26
 
-**Background**: DeepSeek is a Chinese AI company founded in 2023, known for its 671B-parameter open-source model DeepSeek-V3. Kimi is a chatbot and LLM series by Moonshot AI, featuring a 2.8-trillion-parameter model with a 1M-token context window. These models represent China&\#x27;s push in cost-efficient AI development.
+**Background**: The sidecar mechanism is an automated trading halt on the Korea Exchange that pauses program sell orders for KOSDAQ 150 stocks for five minutes when triggered by rapid declines. AI capital expenditure skepticism has been growing as companies like Alphabet, Meta, Microsoft, and Amazon announced combined AI spending of $725 billion in April, with unclear monetization timelines.
 
 <details><summary>References</summary>
 <ul>
-<li><a href="https://en.wikipedia.org/wiki/DeepSeek">DeepSeek - Wikipedia</a></li>
-<li><a href="https://en.wikipedia.org/wiki/Kimi_%28chatbot%29">Kimi (chatbot) - Wikipedia</a></li>
-<li><a href="https://en.wikipedia.org/wiki/Anthropic">Anthropic - Wikipedia</a></li>
+<li><a href="https://cryptobriefing.com/korea-exchange-sidecar-kosdaq-volatility/">Korea Exchange activates sidecar on KOSDAQ amid market volatility</a></li>
+<li><a href="https://www.latimes.com/business/story/2025-12-15/wall-street-eyes-ai-bubble-as-skepticism-grows-over-trillion-dollar-bets">Wall Street eyes AI bubble as skepticism grows over trillion ...</a></li>
+<li><a href="https://www.news.cn/fortune/20260723/4d6508a52d0140d39f0eddc4050ad1c3/c.html">布伦特油价突破100美元 - 新华网</a></li>
 
 </ul>
 </details>
 
-**Tags**: `#AI`, `#investment`, `#cost reduction`, `#open source`, `#China`
+**Tags**: `#stock market`, `#AI investment`, `#geopolitics`, `#oil prices`, `#tech sector`
 
 ---
 
 <a id="item-13"></a>
-## [Meta&\#x27;s $12B AI Bond Faces Higher Borrowing Costs](https://wallstreetcn.com/articles/3777847) ⭐️ 7.0/10
+## [GIC: Chinese AI Models to Lower Global AI Costs](https://wallstreetcn.com/articles/3777845) ⭐️ 7.0/10
 
-Meta is raising $12 billion for a Texas data center via a special purpose vehicle, with initial yields exceeding 7% and risk premiums about 0.4 percentage points higher than its Hyperion bond from October 2025. Rising borrowing costs signal growing investor caution over AI-related debt, potentially impacting the economics of AI infrastructure investments and the broader bond market. The bond is issued through Sopaipilla Investor LLC, a special purpose vehicle, and matures in 2048. It is secured by Meta&\#x27;s 20-year lease payments starting in 2028, but lacks direct physical asset collateral.
+Singapore sovereign wealth fund GIC stated that Chinese AI models like DeepSeek and Kimi will significantly reduce the cost of AI technology globally, accelerating enterprise adoption. GIC&\#x27;s Chief Investment Officer Bryan Yeo made the remarks in a Financial Times interview on July 23. This prediction from a major global investor suggests that the rise of cost-effective Chinese AI models could challenge the high valuations of US closed-source AI leaders like OpenAI and Anthropic, potentially reshaping the AI industry landscape. Lower costs could also democratize AI access for enterprises worldwide. GIC led a $30 billion funding round for Anthropic in February and has invested billions in AI overall. However, GIC remains cautious about investing in Chinese AI startups, stating it needs to scrutinize their R&amp;D and model iteration capabilities more strictly.
 
-rss · 华尔街见闻 - 全球快讯 · Jul 24, 03:34
+rss · 华尔街见闻 - 全球快讯 · Jul 24, 03:43
 
-**Background**: Tech giants like Meta are investing heavily in AI data centers, often using special purpose vehicles to keep debt off their balance sheets. Meta&\#x27;s previous Hyperion project bond, issued in October 2025, was a record $27 billion deal. The new bond&\#x27;s higher yield reflects market skepticism about the sustainability of AI spending.
+**Background**: DeepSeek and Kimi are Chinese large language models that have gained attention for their competitive performance at lower cost. GIC is one of the world&\#x27;s largest sovereign wealth funds, managing Singapore&\#x27;s foreign reserves. The AI industry has seen soaring valuations for leading US firms, with OpenAI and Anthropic each valued near $1 trillion.
 
 <details><summary>References</summary>
 <ul>
-<li><a href="https://www.linkedin.com/posts/morgan-stanley_on-october-21-2025-meta-and-blue-owl-announced-activity-7386504236668235776-_u_m">Meta and Blue Owl Launch $27Bn Data Center Venture | LinkedIn</a></li>
-<li><a href="https://www.fitchratings.com/research/infrastructure-project-finance/fitch-expects-to-rate-sopaipilla-investor-llc-proposed-senior-secured-notes-aa-exp-22-07-2026">Fitch Expects to Rate Sopaipilla Investor , LLC&#x27;s Proposed Senior...</a></li>
-<li><a href="https://www.spglobal.com/ratings/en/regulatory/article/-/view/type/HTML/id/3459943">Beignet Investor LLC’s $27.3 Billion Senior Secur | S&amp;P Global Ratings</a></li>
+<li><a href="https://deepseek.com/en/index.html">DeepSeek</a></li>
+<li><a href="https://www.kimi.com/en">Kimi AI with K3 | Built for Agentic Coding &amp; Knowledge Work</a></li>
+<li><a href="https://en.wikipedia.org/wiki/GIC_%28sovereign_wealth_fund%29">GIC (sovereign wealth fund) - Wikipedia</a></li>
 
 </ul>
 </details>
 
-**Tags**: `#AI infrastructure`, `#corporate bonds`, `#Meta`, `#data centers`, `#investment`
+**Tags**: `#AI`, `#cost reduction`, `#Chinese AI models`, `#sovereign fund`, `#enterprise adoption`
 
 ---
 
 <a id="item-14"></a>
-## [Citi Warns Commodities Enter &\#x27;High-Frequency Black Swan&\#x27; Era](https://wallstreetcn.com/articles/3777837) ⭐️ 7.0/10
+## [Meta&\#x27;s $12B AI Bond Deal Signals Rising Borrowing Costs](https://wallstreetcn.com/articles/3777847) ⭐️ 7.0/10
 
-On July 23, Citi Research released a report outlining extreme tail-risk scenarios for commodities in H2 2026 and beyond, including a US-Iran conflict that could push oil above $200/barrel and a critical minerals hoarding race that could lift copper above $20,000/ton. This analysis highlights that extreme events are becoming more frequent, challenging traditional supply-demand frameworks and forcing investors to prepare for unprecedented price swings. The scenarios could reshape global energy security, inflation expectations, and commodity investment strategies. Citi rates the US-Iran conflict as the highest-impact tail risk, with a potential 100%-200% oil price surge if the Strait of Hormuz is closed. For gold, Citi sees a near-term 15%-20% drop before a long-term rally to $6,000/oz. The report also covers extreme El Niño impacts on cocoa and sugar.
+Meta is raising $12 billion via a special purpose vehicle \(SPV\) for a data center in El Paso, Texas, with initial yields exceeding 7% and risk premiums about 0.4 percentage points higher than its previous AI bond deal in October 2024. Rising borrowing costs for AI infrastructure debt signal growing market caution, potentially impacting tech giants&\#x27; massive spending plans and the broader AI investment boom. The bonds are issued through an SPV named Sopaipilla Investor, with Meta holding a 20% equity stake and providing lease payments as collateral. The structure lacks direct asset pledges, and Meta can terminate the lease without penalty if delays exceed 18 months due to severe accidents.
 
-rss · 华尔街见闻 - 全球快讯 · Jul 24, 03:12
+rss · 华尔街见闻 - 全球快讯 · Jul 24, 03:34
 
-**Background**: Tail risk refers to low-probability, high-impact events that lie outside normal market expectations. Since 2020, commodity markets have experienced an unprecedented density of extreme events, including COVID-19, the Russia-Ukraine war, trade wars, and central bank gold buying. Citi&\#x27;s report is not a baseline forecast but a scenario analysis to help investors prepare for unlikely but devastating outcomes.
+**Background**: Tech companies are increasingly using SPVs to finance AI data centers without burdening their balance sheets. Meta&\#x27;s previous $27 billion bond deal in October 2024 set a record, but the new deal reflects higher risk premiums as investors grow wary of AI-related debt.
 
 <details><summary>References</summary>
 <ul>
-<li><a href="https://www.investopedia.com/terms/t/tailrisk.asp">investopedia.com/terms/t/tailrisk.asp</a></li>
-<li><a href="https://www.citigroup.com/global/insights/commodities-market-outlook-4q-25">Commodities Market Outlook: 4Q ‘25 - citigroup.com</a></li>
-<li><a href="https://www.dallasfed.org/research/economics/2026/0320">What the closure of the Strait of Hormuz means for the global ...</a></li>
+<li><a href="https://news.qq.com/rain/a/20260724A06NJ300">AI烧钱开始涨价！Meta再融资120亿美元，借钱成本明显上升</a></li>
+<li><a href="https://finance.sina.com.cn/roll/2025-11-17/doc-infxrsew4239988.shtml">“AI泡沫”争议起——美国科技巨头“发债潮”与隐忧|债券_新浪财经_新浪网</a></li>
+<li><a href="https://www.huxiu.com/article/4803862.html">硅谷AI“地震”：从债券市场开始？ - 虎嗅网</a></li>
 
 </ul>
 </details>
 
-**Tags**: `#commodities`, `#geopolitical risk`, `#oil`, `#black swan`, `#market analysis`
+**Tags**: `#AI`, `#finance`, `#Meta`, `#data centers`, `#bonds`
 
 ---
 
 <a id="item-15"></a>
-## [Musk: AI may end humanity, but I&\#x27;d still take the ride](https://wallstreetcn.com/articles/3777836) ⭐️ 7.0/10
+## [Citi Warns Commodity Markets Enter &\#x27;High-Frequency Black Swan&\#x27; Era](https://wallstreetcn.com/articles/3777837) ⭐️ 7.0/10
 
-In a recent interview with The Economist, Elon Musk predicted that artificial general intelligence \(AGI\) will surpass human intelligence within five years and estimated a 10-20% chance of human extinction from AI. He proposed a mutual review mechanism among leading AI companies to ensure safety. Musk&\#x27;s specific timeline and risk estimate add urgency to the AI safety debate, and his proposed peer-review model offers a concrete regulatory approach that could influence industry practices and government policy. Musk compared pursuing AI to boarding a rocket with a 10-20% chance of explosion, arguing that the potential benefits outweigh the risks. He suggested that competing AI companies should review each other&\#x27;s models before release, as government officials lack the technical expertise to do so.
+Citi Research published a report on July 23, 2026, outlining extreme tail risk scenarios for commodity markets in the second half of 2026 and beyond, including geopolitical conflicts, climate shocks, and AI-driven volatility. This analysis signals that extreme events are becoming more frequent, potentially rendering traditional supply-demand frameworks obsolete and forcing investors to reassess risk management strategies. Key scenarios include a US-Iran conflict driving oil above $200/barrel, a critical minerals hoarding race pushing copper to $20,000/ton, and a potential gold drop of 15-20% before doubling to $6,000/oz.
 
-rss · 华尔街见闻 - 全球快讯 · Jul 24, 03:07
+rss · 华尔街见闻 - 全球快讯 · Jul 24, 03:12
 
-**Background**: Artificial General Intelligence \(AGI\) refers to AI that can perform any intellectual task that a human can. Musk has long warned about AI risks, co-founding OpenAI in 2015 but later leaving due to disagreements. The interview also touched on his criticism of OpenAI&\#x27;s shift from open-source to for-profit, and his willingness to set aside personal conflicts for AI safety.
+**Background**: Tail risk refers to rare, extreme events that fall outside normal market expectations, often with severe consequences. Since 2020, commodity markets have faced an unprecedented density of shocks including COVID-19, the Russia-Ukraine war, trade wars, and central bank gold buying sprees.
 
 <details><summary>References</summary>
 <ul>
-<li><a href="https://zh.wikipedia.org/wiki/%E9%80%9A%E7%94%A8%E4%BA%BA%E5%B7%A5%E6%99%BA%E6%85%A7">通用人工智慧 - 维基百科，自由的百科全书</a></li>
-<li><a href="https://www.zhihu.com/question/2063921064586000014">马斯克呼吁 AI 公司自我审查，这种「同行审查」机制能否有效保障 AI ...</a></li>
-<li><a href="https://juejin.cn/post/7241080797025157175">ChatGPT老板警告： AI 可能 灭 绝 人 类 图灵奖得主Bengio和Hinton...</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Tail_risk">Tail risk - Wikipedia</a></li>
+<li><a href="https://www.investopedia.com/terms/t/tailrisk.asp">Tail Risk and Portfolio Protection: A Comprehensive Guide</a></li>
+<li><a href="https://www.financestrategists.com/wealth-management/investment-risk/tail-risk/">Tail Risk | Definition, Causes, Measurement, &amp; Management</a></li>
 
 </ul>
 </details>
 
-**Tags**: `#AI`, `#AGI`, `#AI safety`, `#Elon Musk`, `#regulation`
+**Tags**: `#commodities`, `#geopolitical risk`, `#tail risk`, `#oil`, `#market analysis`
 
 ---
