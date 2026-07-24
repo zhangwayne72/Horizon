@@ -7,6 +7,9 @@
     "temperature": 0.2,
     "max_tokens": 4096,
     "throttle_sec": 0.1,
+    "analysis_concurrency": 1,
+    "enrichment_concurrency": 1,
+    "system_prompt": "你是一位专业的中文财经分析师。请注意：无论输入源是什么语言，你必须完全使用【简体中文】进行分析、总结和输出。绝对不允许出现英文摘要或英文回复。所有输出结构必须符合中文阅读习惯。",
     "languages": [
       "zh"
     ]
