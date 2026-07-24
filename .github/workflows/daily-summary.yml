@@ -36,7 +36,7 @@ jobs:
         GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
         DS_API_KEY: ${{ secrets.DS_API_KEY }}
       # 💡 关键修改点：在命令末尾显式指定生成中文简报 (--language zh)
-      run: uv run horizon --hours 24 --language zh
+      run: uv run horizon --hours 24
 
     - name: Set current date as environment variable
       run: echo "DATE=$(date +'%Y-%m-%d')" >> $GITHUB_ENV
