@@ -15,14 +15,36 @@
   "sources": {
     "rss": [
       {
-        "name": "财联社快讯",
+        "name": "财联社 - 电报",
         "url": "https://rss.08182005.xyz/cls/telegraph/2",
         "enabled": true,
         "category": "finance"
+      },
+      {
+        "name": "第一财经 - 快讯",
+        "url": "https://rss.08182005.xyz/yicai/brief",
+        "enabled": true,
+        "category": "finance"
+      },
+      {
+        "name": "华尔街见闻 - 全球快讯",
+        "url": "https://rss.08182005.xyz/wallstreetcn/news/global",
+        "enabled": true,
+        "category": "finance"
+      },
+      {
+        "name": "新浪财经 - 7x24快讯",
+        "url": "https://rss.08182005.xyz/sina/finance/7x24",
+        "enabled": false,
+        "category": "finance"
       }
     ],
-    "hackernews": { "enabled": false },
-    "reddit": { "enabled": false }
+    "hackernews": {
+      "enabled": false
+    },
+    "reddit": {
+      "enabled": false
+    }
   },
   "filtering": {
     "ai_score_threshold": 5.0,
@@ -37,7 +59,10 @@
     "platform": "feishu",
     "layout": "markdown",
     "fallback_layout": "markdown",
-    "languages": ["zh", "en"], 
+    "languages": [
+      "zh",
+      "en"
+    ],
     "request_body": {
       "msg_type": "interactive",
       "card": {
