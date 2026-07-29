@@ -1,9 +1,6 @@
 name: Daily Horizon Summary
 
 on:
-  schedule:
-    # 每天 UTC 时间 00:30 运行，即北京时间 08:30
-    - cron: '17 2 * * *'
   workflow_dispatch: # 允许手动点击触发
 
 jobs:
