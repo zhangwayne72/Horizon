@@ -18,33 +18,15 @@
   "sources": {
     "rss": [
       {
-        "name": "财联社 - 电报",
-        "url": "https://rss.08182005.xyz/cls/telegraph/2",
-        "enabled": true,
-        "category": "finance"
-      },
-      {
         "name": "第一财经 - 快讯",
         "url": "https://rss.08182005.xyz/yicai/brief",
         "enabled": true,
         "category": "finance"
       },
       {
-        "name": "东方财富 - 财经快讯",
-        "url": "https://rss.08182005.xyz/eastmoney/report/1",
+        "name": "财联社 - 国际",
+        "url": "https://rss.08182005.xyz/cls/telegraph/1",
         "enabled": true,
-        "category": "finance"
-      },
-      {
-        "name": "巨潮资讯网 - 当日公告",
-        "url": "https://rss.08182005.xyz/cninfo/announcement",
-        "enabled": true,
-        "category": "finance"
-      },
-      {
-        "name": "新浪财经 - 7x24快讯",
-        "url": "https://rss.08182005.xyz/sina/finance/7x24",
-        "enabled": false,
         "category": "finance"
       }
     ],
